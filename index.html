@@ -25,7 +25,6 @@
         }
         .hero-content {
             position: relative;
-            z-index: 1;
             background: rgba(250, 235, 215, 0.8); /* Light terracotta with opacity */
             padding: 20px;
             border-radius: 10px;
@@ -58,13 +57,14 @@
             background: #8B4513; /* Medium terracotta button background on hover */
         }
         .navbar {
-            position: absolute;
+            position: fixed; /* Fix the navbar at the top */
             top: 0;
             width: 100%;
             display: flex;
             justify-content: center;
             padding: 1em;
             background: rgba(210, 105, 30, 0.8); /* Medium terracotta background with transparency */
+            z-index: 10; /* Ensure it stays above other elements */
         }
         .navbar a {
             color: white;
@@ -170,45 +170,39 @@
         </div>
         <div class="gallery">
             <!-- 39 photo placeholders -->
-            <div class="gallery-item"><img src="path/to/photo1.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo2.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo3.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo4.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo5.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo6.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo7.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo8.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo9.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo10.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo11.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo12.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo13.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo14.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo15.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo16.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo17.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo18.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo19.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo20.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo21.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo22.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo23.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo24.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo25.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo26.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo27.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo28.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo29.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo30.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo31.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo32.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo33.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo34.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo35.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo36.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo37.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo38.jpg" alt="Placeholder"></div>
-            <div class="gallery-item"><img src="path/to/photo39.jpg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="Cape.png" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="Ex10.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="Ex2.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="Ex5.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="Ex6.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="Ex7.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="Ex8.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="Ex8.png" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="Ex9.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="Falmouth.png" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_0216.JPEG" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_0217.JPEG" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_0218.JPEG" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_1422.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_1426.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_1426.png" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_1461.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_1516.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_1564.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_1565.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_1589.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_1667.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_1867.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_2307.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_2308.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_2345.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_2349.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="IMG_46A36BCC546D-1 2.JPEG" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="Phuc .png" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="ex1.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="ex3 copy.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="ex3.jpeg" alt="Placeholder"></div>
+            <div class="gallery-item"><img src="ex4.jpeg" alt="Placeholder"></div>
         </div>
     </div>
     <div id="contact" class="contact-section">
