@@ -21,17 +21,38 @@
             align-items: center;
             text-align: center;
             color: #8B4513; /* Dark terracotta text color */
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(250, 235, 215, 0.7); /* Semi-transparent overlay */
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            background: rgba(250, 235, 215, 0.8); /* Light terracotta with opacity */
+            padding: 20px;
+            border-radius: 10px;
         }
         .hero h1 {
             font-size: 3em;
             margin: 0;
+            color: #4B2E1E; /* Darker color for better contrast */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
         }
         .hero p {
             font-size: 1.5em;
             margin: 0.5em 0;
+            color: #4B2E1E; /* Darker color for better contrast */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
         }
         .btn {
-            background: #8B4513; /* Dark terracotta button background */
+            background: #4B2E1E; /* Darker terracotta button background */
             color: white;
             padding: 0.5em 2em;
             text-decoration: none;
@@ -40,9 +61,10 @@
             margin: 5px;
             border: none;
             transition: background 0.3s;
+            text-shadow: none;
         }
         .btn:hover {
-            background: #D2691E; /* Medium terracotta button background on hover */
+            background: #8B4513; /* Medium terracotta button background on hover */
         }
         .navbar {
             position: absolute;
@@ -103,9 +125,11 @@
         </div>
     </div>
     <div class="hero">
-        <h1>Unearth your dream yard</h1>
-        <p>Step Up to the Starting Line</p>
-        <a href="#" class="btn">Explore Power</a>
+        <div class="hero-content">
+            <h1>Unearth your dream yard</h1>
+            <p>Step Up to the Starting Line</p>
+            <a href="#" class="btn">Explore Power</a>
+        </div>
     </div>
     <div id="services" class="services-section">
         <h2>Our Services</h2>
@@ -132,3 +156,4 @@
     </div>
 </body>
 </html>
+
