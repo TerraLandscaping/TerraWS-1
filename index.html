@@ -17,6 +17,14 @@
             min-height: 100vh;
             width: 100%;
             overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+            box-sizing: border-box;
         }
         .navbar {
             position: fixed;
@@ -240,100 +248,112 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="logo">
-            <img src="Photos/example_44.jpeg" alt="Logo"> <!-- Replace with the actual path to your logo image -->
-        </div>
-        <div class="nav-links">
-            <a href="#services">Services</a>
-            <a href="#gallery" onclick="openGallery()">Photo Gallery</a>
-            <a href="#contact">Contact Us</a>
+        <div class="container">
+            <div class="logo">
+                <img src="Photos/example_44.jpeg" alt="Logo"> <!-- Replace with the actual path to your logo image -->
+            </div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#gallery" onclick="openGallery()">Photo Gallery</a>
+                <a href="#contact">Contact Us</a>
+            </div>
         </div>
     </div>
     <div class="hero">
-        <div class="hero-content">
-            <h1>Unearth your dream yard</h1>
-            <p>Construction, remodeling, demolition</p>
-            <a href="#services" class="btn">Explore Power</a>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Unearth your dream yard</h1>
+                <p>Construction, remodeling, demolition</p>
+                <a href="#services" class="btn">Explore Power</a>
+            </div>
         </div>
     </div>
     <div id="services" class="services-section">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Your vision for your land made real</li>
-        </ul>
-        <div class="services-grid">
-            <div class="service-item">
-                <img src="Photos/Ex2.jpeg" alt="Service Image" class="expandable">
-                <p>Garden Installations</p>
-            </div>
-            <div class="service-item">
-                <img src="Photos/Ex7.jpeg" alt="Service Image" class="expandable">
-                <p>Spring and fall cleanup</p>
-            </div>
-            <div class="service-item">
-                <img src="Photos/IMG_2345.jpeg" alt="Service Image" class="expandable">
-                <p>Patios and walkways</p>
-            </div>
-            <div class="service-item">
-                <img
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Your vision for your land made real</li>
+            </ul>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="Photos/Ex2.jpeg" alt="Service Image" class="expandable">
+                    <p>Garden Installations</p>
+                </div>
+                <div class="service-item">
+                    <img src="Photos/Ex7.jpeg" alt="Service Image" class
 
- src="Photos/Phuc.png" alt="Service Image" class="expandable">
-                <p>Brush Clearing</p>
-            </div>
-            <div class="service-item">
-                <img src="Photos/IMG_1566 (1).jpeg" alt="Service Image" class="expandable">
-                <p>Seeding and Planting</p>
-            </div>
-            <div class="service-item">
-                <img src="Photos/Cape.png" alt="Service Image" class="expandable">
-                <p>Hauling and Dump Runs</p>
+="expandable">
+                    <p>Spring and fall cleanup</p>
+                </div>
+                <div class="service-item">
+                    <img src="Photos/IMG_2345.jpeg" alt="Service Image" class="expandable">
+                    <p>Patios and walkways</p>
+                </div>
+                <div class="service-item">
+                    <img src="Photos/Phuc.png" alt="Service Image" class="expandable">
+                    <p>Brush Clearing</p>
+                </div>
+                <div class="service-item">
+                    <img src="Photos/IMG_1566 (1).jpeg" alt="Service Image" class="expandable">
+                    <p>Seeding and Planting</p>
+                </div>
+                <div class="service-item">
+                    <img src="Photos/Cape.png" alt="Service Image" class="expandable">
+                    <p>Hauling and Dump Runs</p>
+                </div>
             </div>
         </div>
     </div>
     <div id="gallery" class="gallery-section">
-        <div class="gallery-header" onclick="toggleGallery()">Photo Gallery</div>
-        <div class="gallery-content">
-            <div class="gallery">
-                <div class="gallery-item"><img src="Photos/Cape.png" alt="Cape" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/Ex10.jpeg" alt="Ex10" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/Ex2.jpeg" alt="Ex2" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/Ex5.jpeg" alt="Ex5" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/Ex6.jpeg" alt="Ex6" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/Ex7.jpeg" alt="Ex7" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/Ex8.png" alt="Ex8" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/Ex9.jpeg" alt="Ex9" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/Falmouth.png" alt="Falmouth" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/IMG_1426.png" alt="IMG_1426" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/IMG_1461.jpeg" alt="IMG_1461" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/IMG_1516.jpeg" alt="IMG_1516" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/IMG_1564.jpeg" alt="IMG_1564" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/IMG_1565.jpeg" alt="IMG_1565" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/IMG_1589.jpeg" alt="IMG_1589" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/IMG_1667.jpeg" alt="IMG_1667" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/IMG_1867.jpeg" alt="IMG_1867" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/IMG_2307.jpeg" alt="IMG_2307" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/IMG_2308.jpeg" alt="IMG_2308" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/IMG_2345.jpeg" alt="IMG_2345" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/IMG_2349.jpeg" alt="IMG_2349" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/ex1.jpeg" alt="ex1" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/ex3.jpeg" alt="ex3" class="expandable"></div>
-                <div class="gallery-item"><img src="Photos/ex4.jpeg" alt="ex4" class="expandable"></div>
+        <div class="container">
+            <div class="gallery-header" onclick="toggleGallery()">Photo Gallery</div>
+            <div class="gallery-content">
+                <div class="gallery">
+                    <div class="gallery-item"><img src="Photos/Cape.png" alt="Cape" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/Ex10.jpeg" alt="Ex10" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/Ex2.jpeg" alt="Ex2" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/Ex5.jpeg" alt="Ex5" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/Ex6.jpeg" alt="Ex6" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/Ex7.jpeg" alt="Ex7" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/Ex8.png" alt="Ex8" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/Ex9.jpeg" alt="Ex9" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/Falmouth.png" alt="Falmouth" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/IMG_1426.png" alt="IMG_1426" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/IMG_1461.jpeg" alt="IMG_1461" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/IMG_1516.jpeg" alt="IMG_1516" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/IMG_1564.jpeg" alt="IMG_1564" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/IMG_1565.jpeg" alt="IMG_1565" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/IMG_1589.jpeg" alt="IMG_1589" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/IMG_1667.jpeg" alt="IMG_1667" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/IMG_1867.jpeg" alt="IMG_1867" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/IMG_2307.jpeg" alt="IMG_2307" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/IMG_2308.jpeg" alt="IMG_2308" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/IMG_2345.jpeg" alt="IMG_2345" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/IMG_2349.jpeg" alt="IMG_2349" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/ex1.jpeg" alt="ex1" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/ex3.jpeg" alt="ex3" class="expandable"></div>
+                    <div class="gallery-item"><img src="Photos/ex4.jpeg" alt="ex4" class="expandable"></div>
+                </div>
             </div>
         </div>
     </div>
     <div id="contact" class="contact-section">
-        <h2>Contact Us</h2>
-        <ul>
-            <li>Email: TerralandscapingME@gmail.com</li>
-            <li>Phone: (207) 650-9156</li>
-            <li>Phone: (207) 272-3014</li>
-        </ul>
-        <a href="https://nextdoor.com/pages/terra-landscaping-llc-portland-me/" class="btn" target="_blank">NextDoor</a>
-        <a href="https://www.facebook.com/people/Terra-Landscaping/100091815697810/" class="btn" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/207terra?igsh=" class="btn" target="_blank">Instagram</a>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <ul>
+                <li>Email: TerralandscapingME@gmail.com</li>
+                <li>Phone: (207) 650-9156</li>
+                <li>Phone: (207) 272-3014</li>
+            </ul>
+            <a href="https://nextdoor.com/pages/terra-landscaping-llc-portland-me/" class="btn" target="_blank">NextDoor</a>
+            <a href="https://www.facebook.com/people/Terra-Landscaping/100091815697810/" class="btn" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/207terra?igsh=" class="btn" target="_blank">Instagram</a>
+        </div>
     </div>
     <div class="footer">
-        <button class="footer-btn" onclick="scrollToTop()">Back to the top</button>
+        <div class="container">
+            <button class="footer-btn" onclick="scrollToTop()">Back to the top</button>
+        </div>
     </div>
 
     <div class="overlay" id="overlay">
