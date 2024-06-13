@@ -87,19 +87,19 @@
         .btn:hover {
             background: #8B4513;
         }
-        .services-section, .gallery-section, .contact-section, .footer {
+        .services-section, .contact-section, .footer {
             text-align: center;
             padding: 50px;
             width: 100%;
         }
         .services-section {
             background-color: #F4A460;
+            overflow-x: scroll;
+            white-space: nowrap;
         }
         .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: inline-flex;
             gap: 20px;
-            justify-items: center;
         }
         .service-item {
             display: flex;
@@ -110,6 +110,8 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
+            min-width: 300px;
+            white-space: normal;
         }
         .service-item img {
             width: 100%;
@@ -130,6 +132,10 @@
             color: white;
             border-radius: 10px;
             margin-bottom: 30px;
+            cursor: pointer;
+        }
+        .gallery-content {
+            display: none;
         }
         .gallery {
             display: grid;
@@ -179,6 +185,7 @@
             background: rgba(210, 105, 30, 0.8);
             color: white;
             margin-top: auto;
+            padding: 20px;
         }
         .footer-btn {
             background: rgba(210, 105, 30, 0.8);
@@ -261,11 +268,13 @@
                 <p>Patios and walkways</p>
             </div>
             <div class="service-item">
-                <img src="Photos/Phuc .png" alt="Service Image" class="expandable">
+                <img src="Photos/Phuc.png" alt="Service Image" class="expandable">
                 <p>Brush Clearing</p>
             </div>
             <div class="service-item">
-                <img src="Photos/IMG_1566 (1).jpeg" alt="Service Image" class="expandable">
+                <img src="Photos/IMG_1566 (1).jpeg" alt="Service Image" class="
+
+expandable">
                 <p>Seeding and Planting</p>
             </div>
             <div class="service-item">
@@ -275,34 +284,34 @@
         </div>
     </div>
     <div id="gallery" class="gallery-section">
-        <div class="gallery-header">
-            <h2>Photo Gallery</h2>
-        </div>
-        <div class="gallery">
-            <div class="gallery-item"><img src="Photos/Cape.png" alt="Cape" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/Ex10.jpeg" alt="Ex10" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/Ex2.jpeg" alt="Ex2" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/Ex5.jpeg" alt="Ex5" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/Ex6.jpeg" alt="Ex6" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/Ex7.jpeg" alt="Ex7" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/Ex8.png" alt="Ex8" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/Ex9.jpeg" alt="Ex9" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/Falmouth.png" alt="Falmouth" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/IMG_1426.png" alt="IMG_1426" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/IMG_1461.jpeg" alt="IMG_1461" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/IMG_1516.jpeg" alt="IMG_1516" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/IMG_1564.jpeg" alt="IMG_1564" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/IMG_1565.jpeg" alt="IMG_1565" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/IMG_1589.jpeg" alt="IMG_1589" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/IMG_1667.jpeg" alt="IMG_1667" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/IMG_1867.jpeg" alt="IMG_1867" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/IMG_2307.jpeg" alt="IMG_2307" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/IMG_2308.jpeg" alt="IMG_2308" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/IMG_2345.jpeg" alt="IMG_2345" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/IMG_2349.jpeg" alt="IMG_2349" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/ex1.jpeg" alt="ex1" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/ex3.jpeg" alt="ex3" class="expandable"></div>
-            <div class="gallery-item"><img src="Photos/ex4.jpeg" alt="ex4" class="expandable"></div>
+        <div class="gallery-header" onclick="toggleGallery()">Photo Gallery</div>
+        <div class="gallery-content">
+            <div class="gallery">
+                <div class="gallery-item"><img src="Photos/Cape.png" alt="Cape" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/Ex10.jpeg" alt="Ex10" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/Ex2.jpeg" alt="Ex2" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/Ex5.jpeg" alt="Ex5" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/Ex6.jpeg" alt="Ex6" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/Ex7.jpeg" alt="Ex7" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/Ex8.png" alt="Ex8" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/Ex9.jpeg" alt="Ex9" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/Falmouth.png" alt="Falmouth" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/IMG_1426.png" alt="IMG_1426" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/IMG_1461.jpeg" alt="IMG_1461" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/IMG_1516.jpeg" alt="IMG_1516" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/IMG_1564.jpeg" alt="IMG_1564" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/IMG_1565.jpeg" alt="IMG_1565" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/IMG_1589.jpeg" alt="IMG_1589" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/IMG_1667.jpeg" alt="IMG_1667" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/IMG_1867.jpeg" alt="IMG_1867" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/IMG_2307.jpeg" alt="IMG_2307" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/IMG_2308.jpeg" alt="IMG_2308" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/IMG_2345.jpeg" alt="IMG_2345" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/IMG_2349.jpeg" alt="IMG_2349" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/ex1.jpeg" alt="ex1" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/ex3.jpeg" alt="ex3" class="expandable"></div>
+                <div class="gallery-item"><img src="Photos/ex4.jpeg" alt="ex4" class="expandable"></div>
+            </div>
         </div>
     </div>
     <div id="contact" class="contact-section">
@@ -316,7 +325,9 @@
         <a href="https://www.facebook.com/people/Terra-Landscaping/100091815697810/" class="btn" target="_blank">Facebook</a>
         <a href="https://www.instagram.com/207terra?igsh=" class="btn" target="_blank">Instagram</a>
     </div>
-    <button class="footer-btn" onclick="scrollToTop()">Back to the top</button>
+    <div class="footer">
+        <button class="footer-btn" onclick="scrollToTop()">Back to the top</button>
+    </div>
 
     <div class="overlay" id="overlay">
         <img src="" alt="Expanded Image" id="overlay-img">
@@ -343,6 +354,12 @@
         // Function to scroll to the top of the page
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Function to toggle the gallery section
+        function toggleGallery() {
+            const galleryContent = document.querySelector('.gallery-content');
+            galleryContent.style.display = galleryContent.style.display === 'none' || galleryContent.style.display === '' ? 'block' : 'none';
         }
     </script>
 </body>
