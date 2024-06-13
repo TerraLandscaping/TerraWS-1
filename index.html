@@ -1,3 +1,8 @@
+To create a more visually pleasing and inviting website for Terra Landscaping, I'll focus on improving the layout, adding better styling, and making sure the design is cohesive and appealing. I'll also include the logo properly and make sure all sections are well-designed and easy to navigate.
+
+Here is the revised code:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +20,34 @@
             flex-direction: column;
             min-height: 100vh;
         }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            background: rgba(210, 105, 30, 0.9);
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .navbar .logo img {
+            height: 50px;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #FFD700;
+        }
         .hero {
             background: url('Photos/Ex9.jpeg') no-repeat center center/cover;
             height: 100vh;
@@ -29,20 +62,20 @@
         .hero-content {
             position: relative;
             background: rgba(250, 235, 215, 0.8);
-            padding: 20px;
+            padding: 20px 40px;
             border-radius: 10px;
-        }
-        .hero h1, .hero p {
-            margin: 0.5em 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .hero h1 {
-            font-size: 3em;
+            font-size: 4em;
+            margin: 0;
             color: #4B2E1E;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         .hero p {
             font-size: 1.5em;
             color: #4B2E1E;
+            margin: 10px 0 20px;
         }
         .btn {
             background: #4B2E1E;
@@ -58,63 +91,39 @@
         .btn:hover {
             background: #8B4513;
         }
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding: 1em;
-            background: rgba(210, 105, 30, 0.8);
-            z-index: 10;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .footer, .services-section, .contact-section, .gallery-section {
+        .services-section, .gallery-section, .contact-section, .footer {
             text-align: center;
             padding: 50px;
-        }
-        .footer {
-            background: rgba(210, 105, 30, 0.8);
-            color: white;
-            margin-top: auto;
+            width: 100%;
         }
         .services-section {
-            min-height: 100vh;
             background-color: #F4A460;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
         }
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
+            justify-items: center;
         }
         .service-item {
             display: flex;
+            flex-direction: column;
             align-items: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .service-item img {
-            width: 250px; /* Increased size */
-            height: 250px; /* Increased size */
-            margin-right: 20px;
-            background-color: #D2691E;
-            cursor: pointer;
-            transition: transform 0.3s;
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
         }
-        .service-item img:hover {
+        .service-item:hover {
             transform: scale(1.05);
-        }
-        .contact-section {
-            min-height: 100vh;
-            background-color: #DEB887;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
         .gallery-section {
             background-color: #FAEBD7;
@@ -124,10 +133,11 @@
             background: #8B4513;
             color: white;
             border-radius: 10px;
+            margin-bottom: 30px;
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased minmax value */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 10px;
         }
         .gallery-item {
@@ -145,9 +155,48 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 10px;
         }
         .gallery-item:hover {
             transform: scale(1.05);
+        }
+        .contact-section {
+            background-color: #DEB887;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .contact-section li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .contact-section .btn {
+            margin-top: 20px;
+        }
+        .footer {
+            background: rgba(210, 105, 30, 0.8);
+            color: white;
+            margin-top: auto;
+        }
+        .footer-btn {
+            background: rgba(210, 105, 30, 0.8);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            border: none;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+        .footer-btn:hover {
+            background: #8B4513;
         }
         .overlay {
             position: fixed;
@@ -164,6 +213,7 @@
         .overlay img {
             max-width: 90%;
             max-height: 90%;
+            border-radius: 10px;
         }
         .overlay .close-btn {
             position: absolute;
@@ -176,26 +226,12 @@
             cursor: pointer;
             font-size: 1.5em;
         }
-        .footer-btn {
-            background: rgba(210, 105, 30, 0.8);
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            border: none;
-            transition: background 0.3s;
-            cursor: pointer;
-        }
-        .footer-btn:hover {
-            background: #8B4513;
-        }
     </style>
 </head>
 <body>
     <div class="navbar">
         <div class="logo">
-            <img src="example 44.jpeg" alt="Logo"> <!-- Replace with the actual path to your logo image -->
+            <img src="Photos/example_44.jpeg" alt="Logo"> <!-- Replace with the actual path to your logo image -->
         </div>
         <div class="nav-links">
             <a href="#services">Services</a>
@@ -229,12 +265,14 @@
                 <p>Patios and walkways</p>
             </div>
             <div class="service-item">
-                <img src="Photos/Phuc .png" alt="Service Image" class="expandable">
+                <img src="Photos/Phuc.png" alt="Service Image" class="expandable">
                 <p>Brush Clearing</p>
             </div>
             <div class="service-item">
-                <img src="Photos/IMG_1566 (1).jpeg" alt="Service Image" class="expandable">
-                <p>Seeding and Planting</p>
+                <img src="Photos/IMG_1566_1.jpeg" alt="Service Image" class="expandable">
+               
+
+ <p>Seeding and Planting</p>
             </div>
             <div class="service-item">
                 <img src="Photos/Cape.png" alt="Service Image" class="expandable">
