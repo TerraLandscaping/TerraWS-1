@@ -272,21 +272,6 @@ body, html {
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
-.top-btn {
-    background: #8B4513;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    border: none;
-    cursor: pointer;
-}
-
-.top-btn:hover {
-    background: #A0522D;
-}
-
 .overlay {
     position: fixed;
     top: 0;
