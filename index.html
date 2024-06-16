@@ -3,75 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional landscaping services with a personal touch in Portland, Maine. Contact us for garden installations, cleanups, patios, and more.">
-    <meta name="keywords" content="landscaping, garden installations, cleanups, patios, walkways, Portland Maine, Terra Landscaping">
-    <meta name="author" content="Terra Landscaping">
     <title>Terra Landscaping</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="navbar">
+    <div class="navbar">
         <div class="logo">
-            <img src="Photos/example_44.jpeg" alt="Terra Landscaping Logo"> <!-- Replace with the actual path to your logo image -->
+            <img src="Photos/example_44.jpeg" alt="Logo">
         </div>
-        <nav class="nav-links">
+        <div class="nav-links">
             <a href="#about">About Us</a>
             <a href="#services">Services</a>
             <a href="#gallery" onclick="openGallery()">Photo Gallery</a>
             <a href="#contact">Contact Us</a>
-        </nav>
-    </header>
-    <section class="hero">
+        </div>
+    </div>
+    <div class="hero">
         <div class="hero-content">
-            <h1>Terra Landscaping</h1>
+            <h1>Terra</h1>
             <p>Professionalism with a personal touch</p>
             <a href="#about" class="btn">About Us</a>
             <a href="#services" class="btn">Our Services</a>
         </div>
-    </section>
-    <section id="about" class="about-section">
+    </div>
+    <div id="about" class="about-section">
         <div class="about-content">
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
         </div>
         <div class="about-image"></div>
-    </section>
-    <section id="services" class="services-section">
+    </div>
+    <div id="services" class="services-section">
         <h2>Our Services</h2>
         <ul>
             <li>Your vision for your land made real</li>
         </ul>
         <div class="services-grid">
             <div class="service-item">
-                <img src="Photos/Ex2.jpeg" alt="Garden Installations" class="expandable">
+                <img src="Photos/Ex2.jpeg" alt="Service Image" class="expandable">
                 <p>Garden Installations</p>
             </div>
             <div class="service-item">
-                <img src="Photos/Ex7.jpeg" alt="Spring and Fall Cleanup" class="expandable">
+                <img src="Photos/Ex7.jpeg" alt="Service Image" class="expandable">
                 <p>Spring and fall cleanup</p>
             </div>
             <div class="service-item">
-                <img src="Photos/IMG_2345.jpeg" alt="Patios and Walkways" class="expandable">
+                <img src="Photos/IMG_2345.jpeg" alt="Service Image" class="expandable">
                 <p>Patios and walkways</p>
             </div>
             <div class="service-item">
-                <img src="Photos/Phuc.png" alt="Brush Clearing" class="expandable">
+                <img src="Photos/Phuc.png" alt="Service Image" class="expandable">
                 <p>Brush Clearing</p>
             </div>
             <div class="service-item">
-                <img src="Photos/IMG_1566 (1).jpeg" alt="Seeding and Planting" class="expandable">
+                <img src="Photos/IMG_1566 (1).jpeg" alt="Service Image" class="expandable">
                 <p>Seeding and Planting</p>
             </div>
             <div class="service-item">
-                <img src="Photos/Cape.png" alt="Hauling and Dump Runs" class="expandable">
+                <img src="Photos/Cape.png" alt="Service Image" class="expandable">
                 <p>Hauling and Dump Runs</p>
             </div>
         </div>
-    </section>
-    <section id="gallery" class="gallery-section">
+    </div>
+    <div id="gallery" class="gallery-section">
         <div class="gallery-header" onclick="toggleGallery()">Photo Gallery</div>
         <div class="gallery-content">
             <div class="gallery">
@@ -101,32 +95,29 @@
                 <div class="gallery-item"><img src="Photos/ex4.jpeg" alt="ex4" class="expandable"></div>
             </div>
         </div>
-    </section>
-    <section id="contact" class="contact-section">
+    </div>
+    <div id="contact" class="contact-section">
         <h2>Contact Us</h2>
         <ul>
-            <li>Email: <a href="mailto:TerralandscapingME@gmail.com">TerralandscapingME@gmail.com</a></li>
-            <li>Phone: <a href="tel:+12076509156">(207) 650-9156</a></li>
-            <li>Phone: <a href="tel:+12072723014">(207) 272-3014</a></li>
+            <li>Email: TerralandscapingME@gmail.com</li>
+            <li>Phone: (207) 650-9156</li>
+            <li>Phone: (207) 272-3014</li>
         </ul>
         <a href="https://nextdoor.com/pages/terra-landscaping-llc-portland-me/" class="btn" target="_blank">NextDoor</a>
         <a href="https://www.facebook.com/people/Terra-Landscaping/100091815697810/" class="btn" target="_blank">Facebook</a>
         <a href="https://www.instagram.com/207terra?igsh=" class="btn" target="_blank">Instagram</a>
-    </section>
-    <footer class="footer">
-    </footer>
-
+    </div>
+    <div class="footer">
+        <button class="footer-btn" onclick="scrollToTop()">Back to the top</button>
+    </div>
     <div class="bottom-bar">
         <button class="top-btn" onclick="scrollToTop()">Top ↑</button>
     </div>
-
     <div class="overlay" id="overlay">
         <img src="" alt="Expanded Image" id="overlay-img">
         <button class="close-btn" onclick="closeOverlay()">X</button>
     </div>
-
     <script>
-        // JavaScript to handle image click and overlay display
         const expandableImages = document.querySelectorAll('.expandable');
         const overlay = document.getElementById('overlay');
         const overlayImg = document.getElementById('overlay-img');
@@ -142,18 +133,15 @@
             overlay.style.display = 'none';
         }
 
-        // Function to scroll to the top of the page
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Function to toggle the gallery section
         function toggleGallery() {
             const galleryContent = document.querySelector('.gallery-content');
             galleryContent.style.display = galleryContent.style.display === 'none' || galleryContent.style.display === '' ? 'block' : 'none';
         }
 
-        // Function to open and expand the gallery section
         function openGallery() {
             const galleryContent = document.querySelector('.gallery-content');
             if (galleryContent.style.display === 'none' || galleryContent.style.display === '') {
