@@ -3,352 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional landscaping services with a personal touch in Portland, Maine. Contact us for garden installations, cleanups, patios, and more.">
+    <meta name="keywords" content="landscaping, garden installations, cleanups, patios, walkways, Portland Maine, Terra Landscaping">
+    <meta name="author" content="Terra Landscaping">
     <title>Terra Landscaping</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', sans-serif;
-            scroll-behavior: smooth;
-            background-color: #FAEBD7;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            width: 100%;
-            overflow-x: hidden;
-        }
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background: #D2691E;
-            z-index: 10;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .navbar .logo img {
-            height: 50px;
-        }
-        .navbar .nav-links {
-            display: flex;
-            justify-content: space-between;
-            flex-grow: 1;
-            margin-left: 20px;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            margin: 0 15px;
-            transition: color 0.3s, background 0.3s;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-        .navbar a:hover {
-            color: #FFD700;
-            background: rgba(0, 0, 0, 0.1);
-        }
-        .hero {
-            background: url('Photos/Phuc .png') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #FFFFFF;
-            position: relative;
-            width: 100%;
-        }
-        .hero-content {
-            position: relative;
-            background: rgba(210, 105, 30, 0.8);
-            padding: 30px 60px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .hero h1 {
-            font-size: 3.5em;
-            margin: 0;
-            color: #FFFFFF;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-        .hero p {
-            font-size: 1.5em;
-            color: #FFFFFF;
-            margin: 10px 0 20px;
-        }
-        .btn {
-            background: #CD5C5C;
-            color: #FFFFFF;
-            padding: 0.5em 2em;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            margin: 5px;
-            border: none;
-            transition: background 0.3s, transform 0.3s;
-        }
-        .btn:hover {
-            background: #A0522D;
-            transform: scale(1.05);
-        }
-        .about-section, .services-section, .contact-section, .footer {
-            text-align: center;
-            padding: 50px 20px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-        .about-section {
-            background-color: #EEE8AA;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-        .about-content {
-            max-width: 600px;
-            text-align: left;
-            font-size: 1.5em;
-        }
-        .about-image {
-            width: 300px;
-            height: 500px;
-            background: #D2691E;
-            margin-left: 20px;
-            border-radius: 10px;
-        }
-        .services-section {
-            background-color: #F4A460;
-            overflow-x: auto;
-            white-space: nowrap;
-        }
-        .services-grid {
-            display: inline-flex;
-            gap: 20px;
-        }
-        .service-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            min-width: 250px;
-            white-space: normal;
-        }
-        .service-item img {
-            width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-        .service-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        .gallery-section {
-            background-color: #FAEBD7;
-        }
-        .gallery-header {
-            padding: 20px;
-            background: #8B4513;
-            color: white;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            cursor: pointer;
-        }
-        .gallery-content {
-            display: none;
-            width: 100%;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 10px;
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
-        .gallery-item {
-            width: 100%;
-            padding-top: 100%;
-            background: #CD5C5C;
-            position: relative;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-        .gallery-item img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-        .gallery-item:hover {
-            transform: scale(1.05);
-        }
-        .contact-section {
-            background-color: #DEB887;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .contact-section ul {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0;
-        }
-        .contact-section li {
-            margin: 10px 0;
-            font-size: 1.2em;
-        }
-        .contact-section .btn {
-            margin-top: 20px;
-        }
-        .footer {
-            background: #D2691E;
-            color: white;
-            margin-top: auto;
-            padding: 20px;
-        }
-        .footer-btn {
-            background: #CD5C5C;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            border: none;
-            transition: background 0.3s;
-            cursor: pointer;
-        }
-        .footer-btn:hover {
-            background: #A0522D;
-        }
-        .bottom-bar {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #D2691E;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-            z-index: 10;
-        }
-        .bottom-bar .top-btn {
-            background: #CD5C5C;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            border: none;
-            transition: background 0.3s, transform 0.3s;
-            cursor: pointer;
-        }
-        .bottom-bar .top-btn:hover {
-            background: #A0522D;
-            transform: scale(1.05);
-        }
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 20;
-        }
-        .overlay img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 10px;
-        }
-        .overlay .close-btn {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: white;
-            color: black;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            font-size: 1.5em;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
+    <header class="navbar">
         <div class="logo">
-            <img src="Photos/example_44.jpeg" alt="Logo"> <!-- Replace with the actual path to your logo image -->
+            <img src="Photos/example_44.jpeg" alt="Terra Landscaping Logo"> <!-- Replace with the actual path to your logo image -->
         </div>
-        <div class="nav-links">
+        <nav class="nav-links">
             <a href="#about">About Us</a>
             <a href="#services">Services</a>
             <a href="#gallery" onclick="openGallery()">Photo Gallery</a>
             <a href="#contact">Contact Us</a>
-        </div>
-    </div>
-    <div class="hero">
+        </nav>
+    </header>
+    <section class="hero">
         <div class="hero-content">
-            <h1>Terra</h1>
+            <h1>Terra Landscaping</h1>
             <p>Professionalism with a personal touch</p>
             <a href="#about" class="btn">About Us</a>
             <a href="#services" class="btn">Our Services</a>
         </div>
-    </div>
-    <div id="about" class="about-section">
+    </section>
+    <section id="about" class="about-section">
         <div class="about-content">
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
         </div>
         <div class="about-image"></div>
-    </div>
-    <div id="services" class="services-section">
+    </section>
+    <section id="services" class="services-section">
         <h2>Our Services</h2>
         <ul>
             <li>Your vision for your land made real</li>
         </ul>
         <div class="services-grid">
             <div class="service-item">
-                <img src="Photos/Ex2.jpeg" alt="Service Image" class="expandable">
+                <img src="Photos/Ex2.jpeg" alt="Garden Installations" class="expandable">
                 <p>Garden Installations</p>
             </div>
             <div class="service-item">
-                <img src="Photos/Ex7.jpeg" alt="Service Image" class="expandable">
+                <img src="Photos/Ex7.jpeg" alt="Spring and Fall Cleanup" class="expandable">
                 <p>Spring and fall cleanup</p>
             </div>
             <div class="service-item">
-                <img src="Photos/IMG_2345.jpeg" alt="Service Image" class="expandable">
+                <img src="Photos/IMG_2345.jpeg" alt="Patios and Walkways" class="expandable">
                 <p>Patios and walkways</p>
             </div>
             <div class="service-item">
-                <img src="Photos/Phuc.png" alt="Service Image" class="expandable">
+                <img src="Photos/Phuc.png" alt="Brush Clearing" class="expandable">
                 <p>Brush Clearing</p>
             </div>
             <div class="service-item">
-                <img src="Photos/IMG_1566 (1).jpeg" alt="Service Image" class="expandable">
+                <img src="Photos/IMG_1566 (1).jpeg" alt="Seeding and Planting" class="expandable">
                 <p>Seeding and Planting</p>
             </div>
             <div class="service-item">
-                <img src="Photos/Cape.png" alt="Service Image" class="expandable">
+                <img src="Photos/Cape.png" alt="Hauling and Dump Runs" class="expandable">
                 <p>Hauling and Dump Runs</p>
             </div>
         </div>
-    </div>
-    <div id="gallery" class="gallery-section">
+    </section>
+    <section id="gallery" class="gallery-section">
         <div class="gallery-header" onclick="toggleGallery()">Photo Gallery</div>
         <div class="gallery-content">
             <div class="gallery">
@@ -378,21 +101,21 @@
                 <div class="gallery-item"><img src="Photos/ex4.jpeg" alt="ex4" class="expandable"></div>
             </div>
         </div>
-    </div>
-    <div id="contact" class="contact-section">
+    </section>
+    <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
         <ul>
-            <li>Email: TerralandscapingME@gmail.com</li>
-            <li>Phone: (207) 650-9156</li>
-            <li>Phone: (207) 272-3014</li>
+            <li>Email: <a href="mailto:TerralandscapingME@gmail.com">TerralandscapingME@gmail.com</a></li>
+            <li>Phone: <a href="tel:+12076509156">(207) 650-9156</a></li>
+            <li>Phone: <a href="tel:+12072723014">(207) 272-3014</a></li>
         </ul>
         <a href="https://nextdoor.com/pages/terra-landscaping-llc-portland-me/" class="btn" target="_blank">NextDoor</a>
         <a href="https://www.facebook.com/people/Terra-Landscaping/100091815697810/" class="btn" target="_blank">Facebook</a>
         <a href="https://www.instagram.com/207terra?igsh=" class="btn" target="_blank">Instagram</a>
-    </div>
-    <div class="footer">
+    </section>
+    <footer class="footer">
         <button class="footer-btn" onclick="scrollToTop()">Back to the top</button>
-    </div>
+    </footer>
 
     <div class="bottom-bar">
         <button class="top-btn" onclick="scrollToTop()">Top ↑</button>
