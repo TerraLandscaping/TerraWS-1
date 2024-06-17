@@ -152,13 +152,25 @@ body, html {
     transition: transform 0.3s, box-shadow 0.3s;
     min-width: 250px;
     white-space: normal;
+    cursor: pointer;
 }
 
-.service-item img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 10px;
+.service-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #4B2E1E;
+}
+
+.service-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    text-align: left;
+}
+
+.service-item li {
+    font-size: 1em;
+    color: #4B2E1E;
 }
 
 .service-item:hover {
@@ -316,4 +328,42 @@ body, html {
     border: none;
     cursor: pointer;
     font-size: 1.5em;
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 30;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    background: #FFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.popup-content {
+    position: relative;
+    padding: 20px;
+}
+
+.popup-content h3 {
+    margin-top: 0;
+}
+
+.popup-content p {
+    margin: 20px 0;
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
 }
