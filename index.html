@@ -15,7 +15,7 @@
 <body>
     <header class="navbar">
         <div class="logo">
-            <img src="Photos/TerraTempLogozoom.jpg" alt="Terra Landscaping Logo"> <!-- Replace with the actual path to your logo image -->
+            <img src="Photos/TerraTempLogozoom.jpg" alt="Terra Landscaping Logo"> <!-- Updated path to your logo image -->
         </div>
         <nav class="nav-links">
             <a href="#about">About Us</a>
@@ -30,7 +30,7 @@
             <p>Professionalism with a personal touch</p>
             <a href="#about" class="btn">About Us</a>
             <a href="#services" class="btn">Our Services</a>
-            <a href="#contact" class="btn">Contact Us</a> <!-- Added button -->
+            <a href="#contact" class="btn">Contact Us</a>
         </div>
     </section>
     <section id="about" class="about-section">
@@ -42,33 +42,41 @@
     </section>
     <section id="services" class="services-section">
         <h2>Our Services</h2>
-        <ul>
-            <li>Your vision for your land made real</li>
-        </ul>
         <div class="services-grid">
-            <div class="service-item">
-                <img src="Photos/Ex2.jpeg" alt="Garden Installations" class="expandable">
-                <p>Garden Installations</p>
+            <div class="service-item" onclick="showPopup('twoDayVisit')">
+                <h3>2 Day Visit Annually</h3>
+                <ul>
+                    <li>Detail 1</li>
+                    <li>Detail 2</li>
+                </ul>
             </div>
-            <div class="service-item">
-                <img src="Photos/Ex7.jpeg" alt="Spring and Fall Cleanup" class="expandable">
-                <p>Spring and fall cleanup</p>
+            <div class="service-item" onclick="showPopup('threeDayVisit')">
+                <h3>3 Day Visit Annually</h3>
+                <ul>
+                    <li>Detail 1</li>
+                    <li>Detail 2</li>
+                </ul>
             </div>
-            <div class="service-item">
-                <img src="Photos/IMG_2345.jpeg" alt="Patios and Walkways" class="expandable">
-                <p>Patios and walkways</p>
+            <div class="service-item" onclick="showPopup('semiAnnual')">
+                <h3>Semi Annual Subscription</h3>
+                <ul>
+                    <li>Detail 1</li>
+                    <li>Detail 2</li>
+                </ul>
             </div>
-            <div class="service-item">
-                <img src="Photos/Phuc.png" alt="Brush Clearing" class="expandable">
-                <p>Brush Clearing</p>
+            <div class="service-item" onclick="showPopup('oneDayCleanUp')">
+                <h3>1 Day Clean Up</h3>
+                <ul>
+                    <li>Detail 1</li>
+                    <li>Detail 2</li>
+                </ul>
             </div>
-            <div class="service-item">
-                <img src="Photos/IMG_1566 (1).jpeg" alt="Seeding and Planting" class="expandable">
-                <p>Seeding and Planting</p>
-            </div>
-            <div class="service-item">
-                <img src="Photos/Cape.png" alt="Hauling and Dump Runs" class="expandable">
-                <p>Hauling and Dump Runs</p>
+            <div class="service-item" onclick="showPopup('specialtyServices')">
+                <h3>Specialty Services</h3>
+                <ul>
+                    <li>Detail 1</li>
+                    <li>Detail 2</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -76,7 +84,7 @@
         <div class="gallery-header" onclick="toggleGallery()">Photo Gallery</div>
         <div class="gallery-content">
             <div class="gallery">
-                <!-- Gallery items will be added here -->
+                <!-- No images for now -->
             </div>
         </div>
     </section>
@@ -101,6 +109,15 @@
     <div class="overlay" id="overlay">
         <img src="" alt="Expanded Image" id="overlay-img">
         <button class="close-btn" onclick="closeOverlay()">X</button>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p id="popup-description"></p>
+        </div>
     </div>
 
     <script>
@@ -137,6 +154,47 @@
             if (galleryContent.style.display === 'none' || galleryContent.style.display === '') {
                 galleryContent.style.display = 'block';
             }
+        }
+
+        // Function to show popup
+        function showPopup(service) {
+            const popup = document.getElementById('popup');
+            const popupTitle = document.getElementById('popup-title');
+            const popupDescription = document.getElementById('popup-description');
+
+            const services = {
+                twoDayVisit: {
+                    title: '2 Day Visit Annually',
+                    description: 'Description for 2 Day Visit Annually service...'
+                },
+                threeDayVisit: {
+                    title: '3 Day Visit Annually',
+                    description: 'Description for 3 Day Visit Annually service...'
+                },
+                semiAnnual: {
+                    title: 'Semi Annual Subscription',
+                    description: 'Description for Semi Annual Subscription service...'
+                },
+                oneDayCleanUp: {
+                    title: '1 Day Clean Up',
+                    description: 'Description for 1 Day Clean Up service...'
+                },
+                specialtyServices: {
+                    title: 'Specialty Services',
+                    description: 'Description for Specialty Services...'
+                }
+            };
+
+            popupTitle.innerText = services[service].title;
+            popupDescription.innerText = services[service].description;
+
+            popup.style.display = 'block';
+        }
+
+        // Function to close popup
+        function closePopup() {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'none';
         }
     </script>
 </body>
