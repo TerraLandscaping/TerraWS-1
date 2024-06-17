@@ -204,29 +204,6 @@ body, html {
     box-sizing: border-box;
 }
 
-.gallery-item {
-    width: 100%;
-    padding-top: 100%;
-    background: #D2691E;
-    position: relative;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.gallery-item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.gallery-item:hover {
-    transform: scale(1.05);
-}
-
 .contact-section {
     background-color: #DEB887;
     display: flex;
