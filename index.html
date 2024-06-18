@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Professional landscaping services with a personal touch in Portland, Maine. Contact us for garden installations, cleanups, patios, and more.">
-    <meta name="keywords"
-        content="landscaping, garden installations, cleanups, patios, walkways, Portland Maine, Terra Landscaping">
+    <meta name="description" content="Professional landscaping services with a personal touch in Portland, Maine. Contact us for garden installations, cleanups, patios, and more.">
+    <meta name="keywords" content="landscaping, garden installations, cleanups, patios, walkways, Portland Maine, Terra Landscaping">
     <meta name="author" content="Terra Landscaping">
     <title>Terra Landscaping</title>
     <link rel="stylesheet" href="styles.css">
@@ -15,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header class="navbar">
         <div class="logo">
@@ -24,7 +20,7 @@
         <nav class="nav-links">
             <a href="#about">About Us</a>
             <a href="#services">Services</a>
-            <a href="#gallery" onclick="openGallery()">Photo Gallery</a>
+            <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact Us</a>
         </nav>
     </header>
@@ -40,8 +36,7 @@
     <section id="about" class="about-section">
         <div class="about-content">
             <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus
-                ante dapibus diam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
         </div>
         <div class="about-image"></div>
     </section>
@@ -51,34 +46,47 @@
             <li>Your vision for your land made real</li>
         </ul>
         <div class="services-grid">
-            <div class="service-item" data-service="service1">
-                <img src="Photos/service1.png" alt="2 Day Visit Annually" class="expandable">
+            <div class="service-item" onclick="showPopup('popup1')">
                 <p>2 Day Visit Annually</p>
+                <ul>
+                    <li>Bullet point 1</li>
+                    <li>Bullet point 2</li>
+                </ul>
             </div>
-            <div class="service-item" data-service="service2">
-                <img src="Photos/service2.png" alt="3 Day Visit Annually" class="expandable">
+            <div class="service-item" onclick="showPopup('popup2')">
                 <p>3 Day Visit Annually</p>
+                <ul>
+                    <li>Bullet point 1</li>
+                    <li>Bullet point 2</li>
+                </ul>
             </div>
-            <div class="service-item" data-service="service3">
-                <img src="Photos/service3.png" alt="Semi Annual Subscription" class="expandable">
+            <div class="service-item" onclick="showPopup('popup3')">
                 <p>Semi Annual Subscription</p>
+                <ul>
+                    <li>Bullet point 1</li>
+                    <li>Bullet point 2</li>
+                </ul>
             </div>
-            <div class="service-item" data-service="service4">
-                <img src="Photos/service4.png" alt="1 Day Clean Up" class="expandable">
+            <div class="service-item" onclick="showPopup('popup4')">
                 <p>1 Day Clean Up</p>
+                <ul>
+                    <li>Bullet point 1</li>
+                    <li>Bullet point 2</li>
+                </ul>
             </div>
-            <div class="service-item" data-service="service5">
-                <img src="Photos/service5.png" alt="Specialty Services" class="expandable">
+            <div class="service-item" onclick="showPopup('popup5')">
                 <p>Specialty Services</p>
+                <ul>
+                    <li>Bullet point 1</li>
+                    <li>Bullet point 2</li>
+                </ul>
             </div>
         </div>
     </section>
-    <section id="gallery" class="gallery-section">
-        <div class="gallery-header" onclick="toggleGallery()">Photo Gallery</div>
-        <div class="gallery-content">
-            <div class="gallery">
-                <!-- Add your gallery items here -->
-            </div>
+    <section id="portfolio" class="portfolio-section">
+        <h2>Portfolio</h2>
+        <div class="portfolio-content">
+            <!-- Portfolio content goes here -->
         </div>
     </section>
     <section id="contact" class="contact-section">
@@ -100,103 +108,49 @@
     </div>
 
     <div class="overlay" id="overlay">
-        <img src="" alt="Expanded Image" id="overlay-img">
-        <button class="close-btn" onclick="closeOverlay()">X</button>
-    </div>
-
-    <div id="service-popup" class="service-popup">
-        <div class="service-popup-content">
-            <span class="close-popup">&times;</span>
-            <h2 id="popup-title">Service Title</h2>
-            <p id="popup-description">Service description goes here...</p>
+        <div class="popup-content" id="popup1">
+            <button class="close-btn" onclick="closePopup()">X</button>
+            <h3>2 Day Visit Annually</h3>
+            <p>Full description of the 2 Day Visit Annually service.</p>
+        </div>
+        <div class="popup-content" id="popup2">
+            <button class="close-btn" onclick="closePopup()">X</button>
+            <h3>3 Day Visit Annually</h3>
+            <p>Full description of the 3 Day Visit Annually service.</p>
+        </div>
+        <div class="popup-content" id="popup3">
+            <button class="close-btn" onclick="closePopup()">X</button>
+            <h3>Semi Annual Subscription</h3>
+            <p>Full description of the Semi Annual Subscription service.</p>
+        </div>
+        <div class="popup-content" id="popup4">
+            <button class="close-btn" onclick="closePopup()">X</button>
+            <h3>1 Day Clean Up</h3>
+            <p>Full description of the 1 Day Clean Up service.</p>
+        </div>
+        <div class="popup-content" id="popup5">
+            <button class="close-btn" onclick="closePopup()">X</button>
+            <h3>Specialty Services</h3>
+            <p>Full description of the Specialty Services.</p>
         </div>
     </div>
 
     <script>
-        // JavaScript to handle image click and overlay display
-        const expandableImages = document.querySelectorAll('.expandable');
-        const overlay = document.getElementById('overlay');
-        const overlayImg = document.getElementById('overlay-img');
-
-        expandableImages.forEach(img => {
-            img.addEventListener('click', () => {
-                overlayImg.src = img.src;
-                overlay.style.display = 'flex';
-            });
-        });
-
-        function closeOverlay() {
-            overlay.style.display = 'none';
+        function showPopup(popupId) {
+            const overlay = document.getElementById('overlay');
+            const popups = document.querySelectorAll('.popup-content');
+            popups.forEach(popup => popup.style.display = 'none');
+            document.getElementById(popupId).style.display = 'block';
+            overlay.style.display = 'flex';
         }
 
-        // Function to scroll to the top of the page
+        function closePopup() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-
-        // Function to toggle the gallery section
-        function toggleGallery() {
-            const galleryContent = document.querySelector('.gallery-content');
-            galleryContent.style.display = galleryContent.style.display === 'none' || galleryContent.style.display === '' ? 'block' : 'none';
-        }
-
-        // Function to open and expand the gallery section
-        function openGallery() {
-            const galleryContent = document.querySelector('.gallery-content');
-            if (galleryContent.style.display === 'none' || galleryContent.style.display === '') {
-                galleryContent.style.display = 'block';
-            }
-        }
-
-        // Popup functionality
-        const serviceItems = document.querySelectorAll('.service-item');
-        const popup = document.getElementById('service-popup');
-        const popupTitle = document.getElementById('popup-title');
-        const popupDescription = document.getElementById('popup-description');
-        const closePopup = document.querySelector('.close-popup');
-
-        const serviceDetails = {
-            service1: {
-                title: "2 Day Visit Annually",
-                description: "Full description for 2 Day Visit Annually."
-            },
-            service2: {
-                title: "3 Day Visit Annually",
-                description: "Full description for 3 Day Visit Annually."
-            },
-            service3: {
-                title: "Semi Annual Subscription",
-                description: "Full description for Semi Annual Subscription."
-            },
-            service4: {
-                title: "1 Day Clean Up",
-                description: "Full description for 1 Day Clean Up."
-            },
-            service5: {
-                title: "Specialty Services",
-                description: "Full description for Specialty Services."
-            }
-        };
-
-        serviceItems.forEach(item => {
-            item.addEventListener('click', () => {
-                const service = item.dataset.service;
-                popupTitle.textContent = serviceDetails[service].title;
-                popupDescription.textContent = serviceDetails[service].description;
-                popup.style.display = 'flex';
-            });
-        });
-
-        closePopup.addEventListener('click', () => {
-            popup.style.display = 'none';
-        });
-
-        window.addEventListener('click', (e) => {
-            if (e.target === popup) {
-                popup.style.display = 'none';
-            }
-        });
     </script>
 </body>
-
 </html>
