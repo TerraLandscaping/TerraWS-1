@@ -15,12 +15,12 @@
 <body>
     <header class="navbar">
         <div class="logo">
-            <img src="Photos/TerraTempLogo.jpeg" alt="Terra Landscaping Logo"> <!-- Adjust the logo path -->
+            <img src="Photos/TerraTempLogozoom.jpg" alt="Terra Landscaping Logo"> <!-- Replace with the actual path to your logo image -->
         </div>
         <nav class="nav-links">
             <a href="#about">About Us</a>
             <a href="#services">Services</a>
-            <a href="#portfolio" onclick="openGallery()">Portfolio</a>
+            <a href="#portfolio" onclick="openGallery()">Portfolio <span class="dropdown-icon">&#9662;</span></a>
             <a href="#contact">Contact Us</a>
         </nav>
     </header>
@@ -42,34 +42,51 @@
     </section>
     <section id="services" class="services-section">
         <h2>Our Services</h2>
-        <ul>
-            <li>Your vision for your land made real</li>
-        </ul>
         <div class="services-grid">
-            <div class="service-item" onclick="openServicePopup('service1')">
-                <div class="icon">🌿</div>
+            <div class="service-item" onclick="openServicePopup('popup1')">
+                <div class="icon">🛠️</div>
                 <h3>2 Day Visit Annually</h3>
-                <p>Annual visits to keep your garden pristine.</p>
+                <ul>
+                    <li>Bullet point info</li>
+                    <li>Bullet point info</li>
+                    <li>Bullet point info</li>
+                </ul>
             </div>
-            <div class="service-item" onclick="openServicePopup('service2')">
-                <div class="icon">🍂</div>
+            <div class="service-item" onclick="openServicePopup('popup2')">
+                <div class="icon">🌱</div>
                 <h3>3 Day Visit Annually</h3>
-                <p>More frequent visits for detailed care.</p>
+                <ul>
+                    <li>Bullet point info</li>
+                    <li>Bullet point info</li>
+                    <li>Bullet point info</li>
+                </ul>
             </div>
-            <div class="service-item" onclick="openServicePopup('service3')">
+            <div class="service-item" onclick="openServicePopup('popup3')">
                 <div class="icon">📅</div>
                 <h3>Semi Annual Subscription</h3>
-                <p>Two comprehensive visits per year.</p>
+                <ul>
+                    <li>Bullet point info</li>
+                    <li>Bullet point info</li>
+                    <li>Bullet point info</li>
+                </ul>
             </div>
-            <div class="service-item" onclick="openServicePopup('service4')">
+            <div class="service-item" onclick="openServicePopup('popup4')">
                 <div class="icon">🧹</div>
                 <h3>1 Day Clean Up</h3>
-                <p>Quick and efficient cleanup services.</p>
+                <ul>
+                    <li>Bullet point info</li>
+                    <li>Bullet point info</li>
+                    <li>Bullet point info</li>
+                </ul>
             </div>
-            <div class="service-item" onclick="openServicePopup('service5')">
+            <div class="service-item" onclick="openServicePopup('popup5')">
                 <div class="icon">🔧</div>
                 <h3>Specialty Services</h3>
-                <p>Custom landscaping tailored to your needs.</p>
+                <ul>
+                    <li>Bullet point info</li>
+                    <li>Bullet point info</li>
+                    <li>Bullet point info</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -90,8 +107,7 @@
         <a href="https://www.facebook.com/people/Terra-Landscaping/100091815697810/" class="btn" target="_blank">Facebook</a>
         <a href="https://www.instagram.com/207terra?igsh=" class="btn" target="_blank">Instagram</a>
     </section>
-    <footer class="footer">
-    </footer>
+    <footer class="footer"></footer>
 
     <div class="bottom-bar">
         <button class="top-btn" onclick="scrollToTop()">Top ↑</button>
@@ -102,38 +118,38 @@
         <button class="close-btn" onclick="closeOverlay()">X</button>
     </div>
 
-    <!-- Popup for Services -->
-    <div class="service-popup" id="service1">
+    <!-- Service Popups -->
+    <div id="popup1" class="service-popup">
         <div class="popup-content">
-            <span class="close-btn" onclick="closeServicePopup('service1')">&times;</span>
+            <button class="close-btn" onclick="closeServicePopup('popup1')">X</button>
             <h2>2 Day Visit Annually</h2>
             <p>Full description of 2 Day Visit Annually service.</p>
         </div>
     </div>
-    <div class="service-popup" id="service2">
+    <div id="popup2" class="service-popup">
         <div class="popup-content">
-            <span class="close-btn" onclick="closeServicePopup('service2')">&times;</span>
+            <button class="close-btn" onclick="closeServicePopup('popup2')">X</button>
             <h2>3 Day Visit Annually</h2>
             <p>Full description of 3 Day Visit Annually service.</p>
         </div>
     </div>
-    <div class="service-popup" id="service3">
+    <div id="popup3" class="service-popup">
         <div class="popup-content">
-            <span class="close-btn" onclick="closeServicePopup('service3')">&times;</span>
+            <button class="close-btn" onclick="closeServicePopup('popup3')">X</button>
             <h2>Semi Annual Subscription</h2>
             <p>Full description of Semi Annual Subscription service.</p>
         </div>
     </div>
-    <div class="service-popup" id="service4">
+    <div id="popup4" class="service-popup">
         <div class="popup-content">
-            <span class="close-btn" onclick="closeServicePopup('service4')">&times;</span>
+            <button class="close-btn" onclick="closeServicePopup('popup4')">X</button>
             <h2>1 Day Clean Up</h2>
             <p>Full description of 1 Day Clean Up service.</p>
         </div>
     </div>
-    <div class="service-popup" id="service5">
+    <div id="popup5" class="service-popup">
         <div class="popup-content">
-            <span class="close-btn" onclick="closeServicePopup('service5')">&times;</span>
+            <button class="close-btn" onclick="closeServicePopup('popup5')">X</button>
             <h2>Specialty Services</h2>
             <p>Full description of Specialty Services.</p>
         </div>
@@ -176,12 +192,12 @@
         }
 
         // Functions to handle service popups
-        function openServicePopup(serviceId) {
-            document.getElementById(serviceId).style.display = 'block';
+        function openServicePopup(id) {
+            document.getElementById(id).style.display = 'block';
         }
 
-        function closeServicePopup(serviceId) {
-            document.getElementById(serviceId).style.display = 'none';
+        function closeServicePopup(id) {
+            document.getElementById(id).style.display = 'none';
         }
     </script>
 </body>
