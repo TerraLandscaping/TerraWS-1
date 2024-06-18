@@ -15,12 +15,12 @@
 <body>
     <header class="navbar">
         <div class="logo">
-            <img src="Photos/TerraTempLogozoom.jpg" alt="Terra Landscaping Logo"> <!-- Replace with the actual path to your logo image -->
+            <img src="Photos/TerraTempLogo.jpeg" alt="Terra Landscaping Logo"> <!-- Adjust the logo path -->
         </div>
         <nav class="nav-links">
             <a href="#about">About Us</a>
             <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio" onclick="openGallery()">Portfolio</a>
             <a href="#contact">Contact Us</a>
         </nav>
     </header>
@@ -46,47 +46,37 @@
             <li>Your vision for your land made real</li>
         </ul>
         <div class="services-grid">
-            <div class="service-item" onclick="showPopup('popup1')">
-                <p>2 Day Visit Annually</p>
-                <ul>
-                    <li>Bullet point 1</li>
-                    <li>Bullet point 2</li>
-                </ul>
+            <div class="service-item" onclick="openServicePopup('service1')">
+                <div class="icon">🌿</div>
+                <h3>2 Day Visit Annually</h3>
+                <p>Annual visits to keep your garden pristine.</p>
             </div>
-            <div class="service-item" onclick="showPopup('popup2')">
-                <p>3 Day Visit Annually</p>
-                <ul>
-                    <li>Bullet point 1</li>
-                    <li>Bullet point 2</li>
-                </ul>
+            <div class="service-item" onclick="openServicePopup('service2')">
+                <div class="icon">🍂</div>
+                <h3>3 Day Visit Annually</h3>
+                <p>More frequent visits for detailed care.</p>
             </div>
-            <div class="service-item" onclick="showPopup('popup3')">
-                <p>Semi Annual Subscription</p>
-                <ul>
-                    <li>Bullet point 1</li>
-                    <li>Bullet point 2</li>
-                </ul>
+            <div class="service-item" onclick="openServicePopup('service3')">
+                <div class="icon">📅</div>
+                <h3>Semi Annual Subscription</h3>
+                <p>Two comprehensive visits per year.</p>
             </div>
-            <div class="service-item" onclick="showPopup('popup4')">
-                <p>1 Day Clean Up</p>
-                <ul>
-                    <li>Bullet point 1</li>
-                    <li>Bullet point 2</li>
-                </ul>
+            <div class="service-item" onclick="openServicePopup('service4')">
+                <div class="icon">🧹</div>
+                <h3>1 Day Clean Up</h3>
+                <p>Quick and efficient cleanup services.</p>
             </div>
-            <div class="service-item" onclick="showPopup('popup5')">
-                <p>Specialty Services</p>
-                <ul>
-                    <li>Bullet point 1</li>
-                    <li>Bullet point 2</li>
-                </ul>
+            <div class="service-item" onclick="openServicePopup('service5')">
+                <div class="icon">🔧</div>
+                <h3>Specialty Services</h3>
+                <p>Custom landscaping tailored to your needs.</p>
             </div>
         </div>
     </section>
-    <section id="portfolio" class="portfolio-section">
-        <h2>Portfolio</h2>
-        <div class="portfolio-content">
-            <!-- Portfolio content goes here -->
+    <section id="portfolio" class="gallery-section">
+        <div class="gallery-header" onclick="toggleGallery()">Portfolio</div>
+        <div class="gallery-content">
+            <div class="gallery"></div>
         </div>
     </section>
     <section id="contact" class="contact-section">
@@ -108,48 +98,90 @@
     </div>
 
     <div class="overlay" id="overlay">
-        <div class="popup-content" id="popup1">
-            <button class="close-btn" onclick="closePopup()">X</button>
-            <h3>2 Day Visit Annually</h3>
-            <p>Full description of the 2 Day Visit Annually service.</p>
+        <img src="" alt="Expanded Image" id="overlay-img">
+        <button class="close-btn" onclick="closeOverlay()">X</button>
+    </div>
+
+    <!-- Popup for Services -->
+    <div class="service-popup" id="service1">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeServicePopup('service1')">&times;</span>
+            <h2>2 Day Visit Annually</h2>
+            <p>Full description of 2 Day Visit Annually service.</p>
         </div>
-        <div class="popup-content" id="popup2">
-            <button class="close-btn" onclick="closePopup()">X</button>
-            <h3>3 Day Visit Annually</h3>
-            <p>Full description of the 3 Day Visit Annually service.</p>
+    </div>
+    <div class="service-popup" id="service2">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeServicePopup('service2')">&times;</span>
+            <h2>3 Day Visit Annually</h2>
+            <p>Full description of 3 Day Visit Annually service.</p>
         </div>
-        <div class="popup-content" id="popup3">
-            <button class="close-btn" onclick="closePopup()">X</button>
-            <h3>Semi Annual Subscription</h3>
-            <p>Full description of the Semi Annual Subscription service.</p>
+    </div>
+    <div class="service-popup" id="service3">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeServicePopup('service3')">&times;</span>
+            <h2>Semi Annual Subscription</h2>
+            <p>Full description of Semi Annual Subscription service.</p>
         </div>
-        <div class="popup-content" id="popup4">
-            <button class="close-btn" onclick="closePopup()">X</button>
-            <h3>1 Day Clean Up</h3>
-            <p>Full description of the 1 Day Clean Up service.</p>
+    </div>
+    <div class="service-popup" id="service4">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeServicePopup('service4')">&times;</span>
+            <h2>1 Day Clean Up</h2>
+            <p>Full description of 1 Day Clean Up service.</p>
         </div>
-        <div class="popup-content" id="popup5">
-            <button class="close-btn" onclick="closePopup()">X</button>
-            <h3>Specialty Services</h3>
-            <p>Full description of the Specialty Services.</p>
+    </div>
+    <div class="service-popup" id="service5">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeServicePopup('service5')">&times;</span>
+            <h2>Specialty Services</h2>
+            <p>Full description of Specialty Services.</p>
         </div>
     </div>
 
     <script>
-        function showPopup(popupId) {
-            const overlay = document.getElementById('overlay');
-            const popups = document.querySelectorAll('.popup-content');
-            popups.forEach(popup => popup.style.display = 'none');
-            document.getElementById(popupId).style.display = 'block';
-            overlay.style.display = 'flex';
+        // JavaScript to handle image click and overlay display
+        const expandableImages = document.querySelectorAll('.expandable');
+        const overlay = document.getElementById('overlay');
+        const overlayImg = document.getElementById('overlay-img');
+
+        expandableImages.forEach(img => {
+            img.addEventListener('click', () => {
+                overlayImg.src = img.src;
+                overlay.style.display = 'flex';
+            });
+        });
+
+        function closeOverlay() {
+            overlay.style.display = 'none';
         }
 
-        function closePopup() {
-            document.getElementById('overlay').style.display = 'none';
-        }
-
+        // Function to scroll to the top of the page
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Function to toggle the gallery section
+        function toggleGallery() {
+            const galleryContent = document.querySelector('.gallery-content');
+            galleryContent.style.display = galleryContent.style.display === 'none' || galleryContent.style.display === '' ? 'block' : 'none';
+        }
+
+        // Function to open and expand the gallery section
+        function openGallery() {
+            const galleryContent = document.querySelector('.gallery-content');
+            if (galleryContent.style.display === 'none' || galleryContent.style.display === '') {
+                galleryContent.style.display = 'block';
+            }
+        }
+
+        // Functions to handle service popups
+        function openServicePopup(serviceId) {
+            document.getElementById(serviceId).style.display = 'block';
+        }
+
+        function closeServicePopup(serviceId) {
+            document.getElementById(serviceId).style.display = 'none';
         }
     </script>
 </body>
