@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
-    background-color: #F6E6E0;
+    background-color: #FAEBD7;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -19,9 +19,9 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: #8B4513;
+    background: #E27D60;
     z-index: 10;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .navbar .logo img {
@@ -103,7 +103,7 @@ body, html {
     transform: scale(1.05);
 }
 
-.about-section, .services-section, .portfolio-section, .contact-section, .footer {
+.about-section, .services-section, .contact-section, .footer {
     text-align: center;
     padding: 50px 20px;
     width: 100%;
@@ -111,7 +111,7 @@ body, html {
 }
 
 .about-section {
-    background-color: #EFA747;
+    background-color: #F6CBA5;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -127,13 +127,13 @@ body, html {
 .about-image {
     width: 300px;
     height: 500px;
-    background: #A73D1F;
+    background: #F08A5D;
     margin-left: 20px;
     border-radius: 10px;
 }
 
 .services-section {
-    background-color: #CC5A38;
+    background-color: #E27D60;
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -147,20 +147,15 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #EFA747;
+    background: #F08A5D;
+    color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     min-width: 250px;
     white-space: normal;
-}
-
-.service-item img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    cursor: pointer;
 }
 
 .service-item:hover {
@@ -168,25 +163,39 @@ body, html {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.portfolio-section {
-    background-color: #EFA747;
+.service-item .icon {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-.portfolio-header {
+.gallery-section {
+    background-color: #F6CBA5;
+}
+
+.gallery-header {
     padding: 20px;
-    background: #8B4513;
+    background: #4B2E1E;
     color: white;
     border-radius: 10px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
-.portfolio-content {
-    display: block;
+.gallery-content {
+    display: none;
     width: 100%;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
 .contact-section {
-    background-color: #CC5A38;
+    background-color: #F08A5D;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,48 +211,35 @@ body, html {
 .contact-section li {
     margin: 10px 0;
     font-size: 1.2em;
+    color: white;
 }
 
 .contact-section .btn {
     margin-top: 20px;
+    background: #4B2E1E;
+    color: white;
 }
 
 .footer {
-    background: #8B4513;
+    background: #E27D60;
     color: white;
     margin-top: auto;
     padding: 20px;
-}
-
-.footer-btn {
-    background: #8B4513;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    border: none;
-    transition: background 0.3s;
-    cursor: pointer;
-}
-
-.footer-btn:hover {
-    background: #A0522D;
 }
 
 .bottom-bar {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: #D57D45;
+    background: #A75D5D;
     display: flex;
     justify-content: center;
     padding: 10px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
 .top-btn {
-    background: #8B4513;
+    background: #4B2E1E;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -280,10 +276,46 @@ body, html {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: #EFA747;
+    background: white;
     color: black;
     padding: 10px;
-    border: 2px solid #CC5A38;
+    border: none;
     cursor: pointer;
     font-size: 1.5em;
+}
+
+.service-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F08A5D;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 30;
+    color: white;
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid #4B2E1E;
+}
+
+.service-popup .popup-content {
+    position: relative;
+}
+
+.service-popup .popup-content h2 {
+    margin-top: 0;
+}
+
+.service-popup .popup-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
 }
