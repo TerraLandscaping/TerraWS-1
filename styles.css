@@ -1,9 +1,9 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif; /* Change to match the logo font */
     scroll-behavior: smooth;
-    background-color: #FAEBD7;
+    background-color: #D36B4E; /* Updated to match logo color */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -19,13 +19,14 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: #E27D60;
+    background: #B3593F; /* Updated to match logo color */
     z-index: 10;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .navbar .logo img {
     height: 50px;
+    border: 2px solid black; /* Added border around logo */
 }
 
 .navbar .nav-links {
@@ -109,7 +110,7 @@ body, html {
 }
 
 .about-section {
-    background-color: #EEE8AA;
+    background-color: #D36B4E; /* Updated to match logo color */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -125,13 +126,13 @@ body, html {
 .about-image {
     width: 300px;
     height: 500px;
-    background: #D2691E;
+    background: #B3593F; /* Updated to match logo color */
     margin-left: 20px;
     border-radius: 10px;
 }
 
 .services-section {
-    background-color: #E27D60;
+    background-color: #B3593F; /* Updated to match logo color */
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -145,14 +146,20 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #F4A460; /* Updated color */
+    background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     min-width: 250px;
     white-space: normal;
-    cursor: pointer;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .service-item:hover {
@@ -233,7 +240,7 @@ body, html {
 }
 
 .footer {
-    background: #E27D60;
+    background: #B3593F; /* Updated to match logo color */
     color: white;
     margin-top: auto;
     padding: 20px;
@@ -259,7 +266,7 @@ body, html {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: #E27D60;
+    background: #B3593F; /* Updated to match logo color */
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -304,38 +311,53 @@ body, html {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: #E27D60; /* Darker shade for the close button */
-    color: white;
+    background: white;
+    color: black;
     padding: 10px;
     border: none;
     cursor: pointer;
     font-size: 1.5em;
 }
 
-/* Updated Popup styles with new colors and border */
-.popup {
-    display: none;
+.service-popup {
     position: fixed;
-    z-index: 30;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    max-width: 500px;
-    background: #F4A460; /* Lighter orange background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    max-width: 600px;
+    background: #B3593F; /* Updated to match logo color */
+    color: white;
     padding: 20px;
-    text-align: center;
-    border: 3px solid #E27D60; /* Contrasting border color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 20;
+    border: 2px solid #8B4513; /* Contrasting border color */
 }
 
-.popup .close {
+.service-popup .close-btn {
     position: absolute;
     top: 10px;
-    right: 20px;
-    font-size: 1.5em;
+    right: 10px;
+    background: #8B4513; /* Updated to match logo color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
     cursor: pointer;
-    background: #E27D60; /* Darker shade for the close button */
+}
+
+.service-popup h3 {
+    margin-top: 0;
+}
+
+.service-popup ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.services-grid .service-item {
+    background: #E27D60; /* Updated to match logo color */
     color: white;
 }
