@@ -26,8 +26,7 @@ body, html {
 
 .navbar .logo img {
     height: 50px;
-    border: 2px solid black;
-    border-radius: 5px;
+    border: 1px solid black;
 }
 
 .navbar .nav-links {
@@ -45,11 +44,17 @@ body, html {
     transition: color 0.3s, background 0.3s;
     padding: 10px 20px;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .navbar a:hover {
     color: #FFD700;
     background: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-icon {
+    margin-left: 5px;
 }
 
 .hero {
@@ -111,7 +116,7 @@ body, html {
 }
 
 .about-section {
-    background-color: #F6CBA5;
+    background-color: #FFD1B2;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -127,13 +132,13 @@ body, html {
 .about-image {
     width: 300px;
     height: 500px;
-    background: #F08A5D;
+    background: #FA7E55;
     margin-left: 20px;
     border-radius: 10px;
 }
 
 .services-section {
-    background-color: #E27D60;
+    background-color: #FFAB76;
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -147,8 +152,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #F08A5D;
-    color: white;
+    background: #FFD1B2;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -164,17 +168,18 @@ body, html {
 }
 
 .service-item .icon {
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 10px;
+    color: #FA7E55;
 }
 
 .gallery-section {
-    background-color: #F6CBA5;
+    background-color: #FFD1B2;
 }
 
 .gallery-header {
     padding: 20px;
-    background: #4B2E1E;
+    background: #FA7E55;
     color: white;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -195,7 +200,7 @@ body, html {
 }
 
 .contact-section {
-    background-color: #F08A5D;
+    background-color: #FFAB76;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,27 +216,40 @@ body, html {
 .contact-section li {
     margin: 10px 0;
     font-size: 1.2em;
-    color: white;
 }
 
 .contact-section .btn {
     margin-top: 20px;
-    background: #4B2E1E;
-    color: white;
 }
 
 .footer {
-    background: #E27D60;
+    background: #FF7768;
     color: white;
     margin-top: auto;
     padding: 20px;
+}
+
+.footer-btn {
+    background: #FA7E55;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: none;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.footer-btn:hover {
+    background: #FFAB76;
 }
 
 .bottom-bar {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: #A75D5D;
+    background: #FFD1B2;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -239,7 +257,7 @@ body, html {
 }
 
 .top-btn {
-    background: #4B2E1E;
+    background: #FF7768;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -250,7 +268,7 @@ body, html {
 }
 
 .top-btn:hover {
-    background: #A0522D;
+    background: #FA7E55;
 }
 
 .overlay {
@@ -290,12 +308,12 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #F08A5D;
+    background: #FFD1B2;
+    color: #4B2E1E;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     z-index: 30;
-    color: white;
     width: 80%;
     max-width: 500px;
     border: 2px solid #4B2E1E;
