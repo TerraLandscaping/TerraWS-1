@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
-    background-color: #FAEBD7;
+    background-color: #FFF4E6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -19,7 +19,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: #A26769;
+    background: #F28C8C;
     z-index: 10;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -47,7 +47,7 @@ body, html {
 }
 
 .navbar a:hover {
-    color: #FFD700;
+    color: #FFDD4A;
     background: rgba(0, 0, 0, 0.1);
 }
 
@@ -66,7 +66,7 @@ body, html {
 
 .hero-content {
     position: relative;
-    background: rgba(250, 235, 215, 0.9);
+    background: rgba(255, 244, 230, 0.9);
     padding: 30px 60px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -75,18 +75,18 @@ body, html {
 .hero h1 {
     font-size: 3.5em;
     margin: 0;
-    color: #4B2E1E;
+    color: #5D3A3A;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
     font-size: 1.5em;
-    color: #4B2E1E;
+    color: #5D3A3A;
     margin: 10px 0 20px;
 }
 
 .btn {
-    background: #4B2E1E;
+    background: #5D3A3A;
     color: white;
     padding: 0.5em 2em;
     text-decoration: none;
@@ -98,7 +98,7 @@ body, html {
 }
 
 .btn:hover {
-    background: #8B4513;
+    background: #A26769;
     transform: scale(1.05);
 }
 
@@ -110,7 +110,7 @@ body, html {
 }
 
 .about-section {
-    background-color: #DDBEA9;
+    background-color: #FFB49A;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -126,13 +126,13 @@ body, html {
 .about-image {
     width: 300px;
     height: 500px;
-    background: #A26769;
+    background: #F28C8C;
     margin-left: 20px;
     border-radius: 10px;
 }
 
 .services-section {
-    background-color: #CB997E;
+    background-color: #FF7F50;
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -146,7 +146,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #F5CBA7;
+    background: #FFD9B3;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -168,12 +168,12 @@ body, html {
 }
 
 .gallery-section {
-    background-color: #FAEBD7;
+    background-color: #FFF4E6;
 }
 
 .gallery-header {
     padding: 20px;
-    background: #A26769;
+    background: #F28C8C;
     color: white;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -196,7 +196,7 @@ body, html {
 .gallery-item {
     width: 100%;
     padding-top: 100%;
-    background: #DDBEA9;
+    background: #FFB49A;
     position: relative;
     cursor: pointer;
     transition: transform 0.3s;
@@ -217,7 +217,7 @@ body, html {
 }
 
 .contact-section {
-    background-color: #DDBEA9;
+    background-color: #FFB49A;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -240,14 +240,14 @@ body, html {
 }
 
 .footer {
-    background: #A26769;
+    background: #F28C8C;
     color: white;
     margin-top: auto;
     padding: 20px;
 }
 
 .footer-btn {
-    background: #8B4513;
+    background: #A26769;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -259,14 +259,14 @@ body, html {
 }
 
 .footer-btn:hover {
-    background: #A0522D;
+    background: #C04D5E;
 }
 
 .bottom-bar {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: #A26769;
+    background: #F28C8C;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -274,7 +274,7 @@ body, html {
 }
 
 .top-btn {
-    background: #8B4513;
+    background: #A26769;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -285,7 +285,7 @@ body, html {
 }
 
 .top-btn:hover {
-    background: #A0522D;
+    background: #C04D5E;
 }
 
 .overlay {
@@ -324,13 +324,13 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #F5CBA7;
+    background: #FFD9B3;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: none;
     z-index: 30;
-    border: 2px solid #A26769;
+    border: 2px solid #F28C8C;
 }
 
 .service-popup-content {
@@ -341,7 +341,7 @@ body, html {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: #8B4513;
+    background: #A26769;
     color: white;
     padding: 5px;
     border: none;
@@ -351,5 +351,5 @@ body, html {
 }
 
 .service-popup .close-popup:hover {
-    background: #A0522D;
+    background: #C04D5E;
 }
