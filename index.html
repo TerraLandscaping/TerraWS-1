@@ -31,19 +31,22 @@
             <p>Professionalism with a personal touch</p>
             <a href="#about" class="btn">About Us</a>
             <a href="#services" class="btn">Our Services</a>
-            <a href="#contact" class="btn">Contact Us</a>
+            <a href="#contact" class="btn hero-contact-btn">Contact Us</a>
         </div>
     </section>
     <section id="about" class="about-section">
+        <h2 class="left-aligned-title">About Us</h2>
         <div class="about-content">
-            <h2 class="left-aligned-title">About Us</h2>
-            <p>
-                We are Terra Landscaping, your trusted partner for all your landscaping needs. Based in the vibrant community of Portland, Maine, we have grown rapidly to become a quality provider of professional landscaping services in the area. Our vision team is committed to excellence, a priority on customer satisfaction, and a passion for transforming outdoor spaces into beautiful, functional landscapes.
-                At Terra Landscaping, we understand that your outdoor space is an extension of your home and lifestyle. Whether it’s a garden installation, seasonal cleanup, custom patio and walkway design, or dense brush clearing, we approach each project with attention to detail and a deep respect for your vision. Our skilled team is dedicated to delivering results that not only meet but exceed your expectations.
-                What sets us apart is our dedication to providing exceptional customer service. We believe that clear communication, reliability, and a personalized approach are key to achieving outstanding outcomes. From the initial consultation to the final walk-through, we are with you every step of the way, ensuring that your time with Terra Landscaping is an efficient, personalized, and professional experience. 
-                Our rapid growth as a local business is a testament to our hard work, expertise, and the trust we have built with our clients. We are proud to be a part of the Portland community, and we strive to give back by enhancing the beauty and value of the properties we work on.
-                Thank you for considering Terra Landscaping for your landscaping projects. We look forward to the opportunity to work with you and to continue our journey of growth and excellence in the landscaping industry.
-            </p>
+            <button class="dropdown-btn" onclick="toggleAbout()">▼</button>
+            <div class="dropdown-content">
+                <p>
+                    We are Terra Landscaping, your trusted partner for all your landscaping needs. Based in the vibrant community of Portland, Maine, we have grown rapidly to become a quality provider of professional landscaping services in the area. Our vision team is committed to excellence, a priority on customer satisfaction, and a passion for transforming outdoor spaces into beautiful, functional landscapes.
+                    At Terra Landscaping, we understand that your outdoor space is an extension of your home and lifestyle. Whether it’s a garden installation, seasonal cleanup, custom patio and walkway design, or dense brush clearing, we approach each project with attention to detail and a deep respect for your vision. Our skilled team is dedicated to delivering results that not only meet but exceed your expectations.
+                    What sets us apart is our dedication to providing exceptional customer service. We believe that clear communication, reliability, and a personalized approach are key to achieving outstanding outcomes. From the initial consultation to the final walk-through, we are with you every step of the way, ensuring that your time with Terra Landscaping is an efficient, personalized, and professional experience. 
+                    Our rapid growth as a local business is a testament to our hard work, expertise, and the trust we have built with our clients. We are proud to be a part of the Portland community, and we strive to give back by enhancing the beauty and value of the properties we work on.
+                    Thank you for considering Terra Landscaping for your landscaping projects. We look forward to the opportunity to work with you and to continue our journey of growth and excellence in the landscaping industry.
+                </p>
+            </div>
         </div>
         <div class="about-image"></div>
     </section>
@@ -230,6 +233,12 @@
         function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
+        }
+
+        // Function to toggle about section
+        function toggleAbout() {
+            const dropdownContent = document.querySelector('.about-section .dropdown-content');
+            dropdownContent.classList.toggle('active');
         }
     </script>
 </body>
