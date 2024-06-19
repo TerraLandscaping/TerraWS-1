@@ -17,6 +17,7 @@
         <div class="logo">
             <img src="Photos/TerraTempLogozoom.jpg" alt="Terra Landscaping Logo"> <!-- Replace with the actual path to your logo image -->
         </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <nav class="nav-links">
             <a href="#about">About Us</a>
             <a href="#services">Services</a>
@@ -222,6 +223,12 @@
 
         function closeServicePopup(id) {
             document.getElementById(id).style.display = 'none';
+        }
+
+        // Function to toggle menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
         }
     </script>
 </body>
