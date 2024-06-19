@@ -118,7 +118,7 @@ body, html {
 }
 
 .about-content {
-    max-width: 600px;
+    max-width: 70%;
     text-align: left;
     font-size: 1.5em;
 }
@@ -129,6 +129,7 @@ body, html {
     background: #D2691E;
     margin-left: 20px;
     border-radius: 10px;
+    align-self: flex-start;
 }
 
 .services-section {
