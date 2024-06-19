@@ -35,9 +35,9 @@
         </div>
     </section>
     <section id="about" class="about-section">
-        <h2 class="left-aligned-title">About Us</h2>
         <div class="about-content">
-            <button class="dropdown-btn" onclick="toggleAbout()">▼</button>
+            <h2 class="left-aligned-title">About Us</h2>
+            <button class="dropdown-btn" onclick="toggleAbout()">Learn More</button>
             <div class="dropdown-content">
                 <p>
                     We are Terra Landscaping, your trusted partner for all your landscaping needs. Based in the vibrant community of Portland, Maine, we have grown rapidly to become a quality provider of professional landscaping services in the area. Our vision team is committed to excellence, a priority on customer satisfaction, and a passion for transforming outdoor spaces into beautiful, functional landscapes.
@@ -237,8 +237,8 @@
 
         // Function to toggle about section
         function toggleAbout() {
-            const dropdownContent = document.querySelector('.about-section .dropdown-content');
-            dropdownContent.classList.toggle('active');
+            const aboutContent = document.querySelector('.dropdown-content');
+            aboutContent.style.display = aboutContent.style.display === 'none' || aboutContent.style.display === '' ? 'block' : 'none';
         }
     </script>
 </body>
