@@ -29,6 +29,15 @@ body, html {
     border: 2px solid black;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+}
+
 .navbar .nav-links {
     display: flex;
     justify-content: space-between;
@@ -118,7 +127,7 @@ body, html {
 }
 
 .about-content {
-    max-width: 70%;
+    max-width: 60%;
     text-align: left;
     font-size: 1.5em;
 }
@@ -129,7 +138,6 @@ body, html {
     background: #D2691E;
     margin-left: 20px;
     border-radius: 10px;
-    align-self: flex-start;
 }
 
 .services-section {
@@ -384,23 +392,30 @@ body, html {
     margin-left: 5px;
 }
 
-/* Media queries for responsive design */
+/* Media Queries for Mobile */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
     .navbar .nav-links {
+        display: none;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         width: 100%;
+        background: #FF7F50;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 9;
     }
 
-    .navbar a {
-        width: 100%;
-        text-align: left;
-        padding: 15px 20px;
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-content {
+        padding: 20px;
     }
 
     .hero h1 {
@@ -412,35 +427,29 @@ body, html {
     }
 
     .btn {
+        width: 100%;
         font-size: 1em;
-        padding: 0.5em 1.5em;
+        margin: 10px 0;
     }
 
     .about-section {
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
 
-    .about-content {
-        max-width: 90%;
-    }
-
-    .about-image {
-        width: 80%;
-        height: auto;
-        margin: 20px 0;
+    .about-content, .about-image {
+        width: 90%;
+        max-width: none;
+        margin: 10px 0;
     }
 
     .services-grid {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+        display: block;
     }
 
     .service-item {
         width: 90%;
-        min-width: unset;
+        margin: 10px auto;
     }
 
     .gallery {
@@ -448,27 +457,11 @@ body, html {
     }
 
     .contact-content {
-        text-align: center;
-    }
-
-    .contact-section ul {
-        padding: 0;
+        width: 90%;
     }
 
     .contact-section .btn {
-        width: 90%;
-        justify-content: center;
-    }
-
-    .bottom-bar {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .top-btn {
         width: 100%;
-        text-align: center;
-        padding: 15px 20px;
+        justify-content: center;
     }
 }
