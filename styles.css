@@ -168,6 +168,14 @@ body, html {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.services-footer {
+    background-color: #FFA07A;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .gallery-section {
     background-color: #F0E68C;
 }
@@ -241,29 +249,29 @@ body, html {
 }
 
 .contact-section .btn {
-    margin-top: 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    background: #FFCCCB;
-    border-radius: 10px;
-    color: #8B4513;
-    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #8B4513;
+    color: white;
     text-decoration: none;
-    transition: background 0.3s, transform 0.3s;
-}
-
-.contact-section .btn-icon {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: none;
+    transition: background 0.3s;
+    cursor: pointer;
 }
 
 .contact-section .btn:hover {
-    background: #FFA07A;
-    transform: scale(1.05);
+    background: #A0522D;
+}
+
+.contact-section .btn-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 .footer {
