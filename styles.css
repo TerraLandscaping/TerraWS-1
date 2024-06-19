@@ -383,3 +383,77 @@ body, html {
 .dropdown-icon {
     margin-left: 5px;
 }
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 0.5em 1.5em;
+    }
+
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 90%;
+    }
+
+    .about-image {
+        width: 80%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .service-item {
+        width: 90%;
+        min-width: unset;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        text-align: center;
+    }
+
+    .contact-section ul {
+        padding: 0;
+    }
+
+    .contact-section .btn {
+        width: 90%;
+        justify-content: center;
+    }
+}
