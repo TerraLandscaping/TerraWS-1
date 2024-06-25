@@ -455,7 +455,7 @@ body, html {
     }
 
     .hero-contact-btn {
-        margin-top: calc(1.75em + 10px); /* Adjust this value based on the button height and margin */
+        margin-top: 60px; /* Adjust this value as needed */
     }
 
     .about-section {
