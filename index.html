@@ -37,9 +37,10 @@
         </div>
     </section>
     <section id="about" class="about-section">
-        <h2 class="left-aligned-title">About Us</h2>
-        <button class="show-more-btn" onclick="toggleAboutContent()">Show More</button>
-        <div class="about-content" id="about-content">
+        <div class="about-image"></div>
+        <div class="about-content">
+            <h2 class="left-aligned-title">About Us</h2>
+            <button class="show-more-btn" onclick="toggleAboutContent()">Show More</button>
             <p>
                 We are Terra Landscaping, your trusted partner for all your landscaping needs. Based in the vibrant community of Portland, Maine, we have grown rapidly to become a quality provider of professional landscaping services in the area. Our vision team is committed to excellence, a priority on customer satisfaction, and a passion for transforming outdoor spaces into beautiful, functional landscapes.
                 At Terra Landscaping, we understand that your outdoor space is an extension of your home and lifestyle. Whether it’s a garden installation, seasonal cleanup, custom patio and walkway design, or dense brush clearing, we approach each project with attention to detail and a deep respect for your vision. Our skilled team is dedicated to delivering results that not only meet but exceed your expectations.
@@ -48,7 +49,6 @@
                 Thank you for considering Terra Landscaping for your landscaping projects. We look forward to the opportunity to work with you and to continue our journey of growth and excellence in the landscaping industry.
             </p>
         </div>
-        <div class="about-image"></div>
     </section>
     <section id="services" class="services-section">
         <h2 class="centered-title">Our Services</h2>
@@ -185,7 +185,6 @@
     </div>
 
     <script>
-        // JavaScript to handle image click and overlay display
         const expandableImages = document.querySelectorAll('.expandable');
         const overlay = document.getElementById('overlay');
         const overlayImg = document.getElementById('overlay-img');
@@ -201,18 +200,15 @@
             overlay.style.display = 'none';
         }
 
-        // Function to scroll to the top of the page
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Function to toggle the gallery section
         function toggleGallery() {
             const galleryContent = document.querySelector('.gallery-content');
             galleryContent.style.display = galleryContent.style.display === 'none' || galleryContent.style.display === '' ? 'block' : 'none';
         }
 
-        // Function to open and expand the gallery section
         function openGallery() {
             const galleryContent = document.querySelector('.gallery-content');
             if (galleryContent.style.display === 'none' || galleryContent.style.display === '') {
@@ -220,7 +216,6 @@
             }
         }
 
-        // Functions to handle service popups
         function openServicePopup(id) {
             document.getElementById(id).style.display = 'block';
         }
@@ -229,47 +224,14 @@
             document.getElementById(id).style.display = 'none';
         }
 
-        // Function to toggle menu
         function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
 
-        // Function to toggle About Us content
         function toggleAboutContent() {
             const aboutContent = document.getElementById('about-content');
             aboutContent.style.display = aboutContent.style.display === 'block' ? 'none' : 'block';
-        }
-        function toggleAboutContent() {
-            const aboutContent = document.getElementById('about-content');
-            if (aboutContent.style.display === 'block') {
-                aboutContent.style.display = 'none';
-            } else {
-                aboutContent.style.display = 'block';
-            }
-        }
-        function toggleAboutContent() {
-            const aboutContent = document.getElementById('about-content');
-            const aboutSection = document.querySelector('.about-section');
-            const title = document.querySelector('.left-aligned-title');
-            const button = document.querySelector('.show-more-btn');
-            const image = document.querySelector('.about-image');
-
-            if (aboutContent.style.display === 'block') {
-                aboutContent.style.display = 'none';
-                title.style.textAlign = 'center';
-                title.style.width = '100%';
-                button.style.textAlign = 'center';
-                button.style.width = '100%';
-                image.style.margin = '0 auto';
-            } else {
-                aboutContent.style.display = 'block';
-                title.style.textAlign = 'left';
-                title.style.width = 'auto';
-                button.style.textAlign = 'center';
-                button.style.width = '100%';
-
-            }
         }
     </script>
 </body>
