@@ -8,6 +8,8 @@
     <meta name="author" content="Terra Landscaping">
     <title>Terra Landscaping</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -24,28 +26,33 @@
         </nav>
     </header>
     <section class="hero">
-        <div class="hero-content">
-            <h1>Terra Landscaping</h1>
-            <p>Professionalism with a personal touch</p>
-            <div class="hero-buttons">
-                <a href="#about" class="btn" onclick="toggleAboutContent()">About Us</a>
-                <a href="#services" class="btn">Our Services</a>
-                <a href="#contact" class="btn">Contact Us</a>
-            </div>
+    <div class="hero-content">
+        <h1>Terra Landscaping</h1>
+        <p>Professionalism with a personal touch</p>
+        <div class="hero-buttons">
+            <a href="#about" class="btn" onclick="toggleAboutContent()">About Us</a>
+            <a href="#services" class="btn">Our Services</a>
+            <a href="#contact" class="btn">Contact Us</a>
         </div>
-    </section>
+    </div>
+</section>
+
     <section id="about" class="about-section">
-        <h2>About Us</h2>
-        <button class="show-more-btn" onclick="toggleAboutContent()">Show More</button>
         <div class="about-content" id="about-content">
+            <h2 class="left-aligned-title">About Us</h2>
+            <button class="show-more-btn" onclick="toggleAboutContent()">Show More</button>
             <p>
-                We are Terra Landscaping, your trusted partner for all your landscaping needs...
+                We are Terra Landscaping, your trusted partner for all your landscaping needs. Based in the vibrant community of Portland, Maine, we have grown rapidly to become a quality provider of professional landscaping services in the area. Our vision team is committed to excellence, a priority on customer satisfaction, and a passion for transforming outdoor spaces into beautiful, functional landscapes.
+                At Terra Landscaping, we understand that your outdoor space is an extension of your home and lifestyle. Whether it’s a garden installation, seasonal cleanup, custom patio and walkway design, or dense brush clearing, we approach each project with attention to detail and a deep respect for your vision. Our skilled team is dedicated to delivering results that not only meet but exceed your expectations.
+                What sets us apart is our dedication to providing exceptional customer service. We believe that clear communication, reliability, and a personalized approach are key to achieving outstanding outcomes. From the initial consultation to the final walk-through, we are with you every step of the way, ensuring that your time with Terra Landscaping is an efficient, personalized, and professional experience. 
+                Our rapid growth as a local business is a testament to our hard work, expertise, and the trust we have built with our clients. We are proud to be a part of the Portland community, and we strive to give back by enhancing the beauty and value of the properties we work on.
+                Thank you for considering Terra Landscaping for your landscaping projects. We look forward to the opportunity to work with you and to continue our journey of growth and excellence in the landscaping industry.
             </p>
         </div>
         <div class="about-image"></div>
     </section>
     <section id="services" class="services-section">
-        <h2>Our Services</h2>
+        <h2 class="centered-title">Our Services</h2>
         <div class="services-grid">
             <div class="service-item" onclick="openServicePopup('popup1')">
                 <div class="icon">🌱</div>
@@ -67,10 +74,39 @@
                     <li>Tree removal</li>
                 </ul>
             </div>
-            <!-- Add other service items here -->
+            <div class="service-item" onclick="openServicePopup('popup3')">
+                <div class="icon">📅</div>
+                <h3>Consultations</h3>
+                <ul>
+                    <li>Get a free quote today!</li>
+                    <li>Planning and advice</li>
+                    <li>Full service maintenance</li>
+                    <li>Have a job not listed here? Give us a call!</li>
+                </ul>
+            </div>
+            <div class="service-item" onclick="openServicePopup('popup4')">
+                <div class="icon">🧹</div>
+                <h3>1 Day Clean Up</h3>
+                <ul>
+                    <li>Spring and Fall clean up</li>
+                    <li>Garden and hedge trimming</li>
+                    <li>Grass seeding and mulching</li>
+                </ul>
+            </div>
+            <div class="service-item" onclick="openServicePopup('popup5')">
+                <div class="icon">🔧</div>
+                <h3>Specialty Services</h3>
+                <ul>
+                    <li>Demolition and dump runs</li>
+                    <li>Irrigation</li>
+                    <li>Dense brush clearing</li>
+                    <li>Service requests and odd jobs</li>
+                </ul>
+            </div>
         </div>
         <footer class="services-footer">
-            <p>We will do everything accept mowing. Check back soon, our services are always expanding!</p>
+            <p>We will do everything accept mowing. </p>
+            <p>Check back soon, our services are always expanding! </p>
         </footer>
     </section>
     <section id="portfolio" class="gallery-section">
@@ -80,7 +116,7 @@
         </div>
     </section>
     <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
+        <h2 class="right-aligned-title">Contact Us</h2>
         <div class="contact-content">
             <ul>
                 <li>Email: <a href="mailto:TerralandscapingME@gmail.com">TerralandscapingME@gmail.com</a></li>
@@ -88,13 +124,16 @@
                 <li>Phone: <a href="tel:+12072723014">(207) 272-3014)</a></li>
             </ul>
             <a href="https://nextdoor.com/pages/terra-landscaping-llc-portland-me/" class="btn nextdoor-btn" target="_blank">
-                <img src="Photos/YE_xQZ7G_400x400.png" alt="NextDoor Logo" class="btn-icon"> NextDoor
+                <img src="Photos/YE_xQZ7G_400x400.png" alt="NextDoor Logo" class="btn-icon">
+                NextDoor
             </a>
             <a href="https://www.facebook.com/people/Terra-Landscaping/100091815697810/" class="btn facebook-btn" target="_blank">
-                <img src="Photos/FaceB_Logo_PNG.png" alt="Facebook Logo" class="btn-icon"> Facebook
+                <img src="Photos/FaceB_Logo_PNG.png" alt="Facebook Logo" class="btn-icon">
+                Facebook
             </a>
             <a href="https://www.instagram.com/207terra?igsh=" class="btn instagram-btn" target="_blank">
-                <img src="Photos/Instagram_logo_2016.svg" alt="Instagram Logo" class="btn-icon"> Instagram
+                <img src="Photos/Instagram_logo_2016.svg" alt="Instagram Logo" class="btn-icon">
+                Instagram
             </a>
         </div>
     </section>
@@ -121,40 +160,83 @@
         <div class="popup-content">
             <button class="close-btn" onclick="closeServicePopup('popup2')">X</button>
             <h2>Building the land you want</h2>
-            <p>We value your vision for your property, and we have the skills to let your vision shine.</p>
+            <p>We value your vision for your property, and we have the skills to let your vision shine. </p>
         </div>
     </div>
-    <!-- Add other popups here -->
+    <div id="popup3" class="service-popup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closeServicePopup('popup3')">X</button>
+            <h2>We have your back</h2>
+            <p>We work with you to answer questions and expand your lands potential, satisfaction guaranteed. Not happy with our work? Contact us and we will fix our mistakes, free of charge.</p>
+        </div>
+    </div>
+    <div id="popup4" class="service-popup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closeServicePopup('popup4')">X</button>
+            <h2>Enjoy the seasons without the hassle</h2>
+            <p>We offer any size cleanups and trimmings to keep your land clear and healthy. We schedule larger projects, single day jobs, and returning visits to keep your garden fresh all year round </p>
+        </div>
+    </div>
+    <div id="popup5" class="service-popup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closeServicePopup('popup5')">X</button>
+            <h2>Let us share the burden</h2>
+            <p>We are here for you! We will do anything you need doing, and we will do it right. No task is out of our reach, our dedication to quality and satisfaction is at your beck and call. </p>
+        </div>
+    </div>
 
     <script>
-        const expandableImages = document.querySelectorAll('.expandable'),
-              overlay = document.getElementById('overlay'),
-              overlayImg = document.getElementById('overlay-img');
+        // JavaScript to handle image click and overlay display
+        const expandableImages = document.querySelectorAll('.expandable');
+        const overlay = document.getElementById('overlay');
+        const overlayImg = document.getElementById('overlay-img');
 
-        expandableImages.forEach(img => img.addEventListener('click', () => {
-            overlayImg.src = img.src;
-            overlay.style.display = 'flex';
-        }));
+        expandableImages.forEach(img => {
+            img.addEventListener('click', () => {
+                overlayImg.src = img.src;
+                overlay.style.display = 'flex';
+            });
+        });
 
-        function closeOverlay() { overlay.style.display = 'none'; }
+        function closeOverlay() {
+            overlay.style.display = 'none';
+        }
 
-        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
 
+        // Function to toggle the gallery section
         function toggleGallery() {
             const galleryContent = document.querySelector('.gallery-content');
-            galleryContent.style.display = galleryContent.style.display === 'none' || !galleryContent.style.display ? 'block' : 'none';
+            galleryContent.style.display = galleryContent.style.display === 'none' || galleryContent.style.display === '' ? 'block' : 'none';
         }
 
+        // Function to open and expand the gallery section
         function openGallery() {
             const galleryContent = document.querySelector('.gallery-content');
-            if (galleryContent.style.display === 'none' || !galleryContent.style.display) galleryContent.style.display = 'block';
+            if (galleryContent.style.display === 'none' || galleryContent.style.display === '') {
+                galleryContent.style.display = 'block';
+            }
         }
 
-        function openServicePopup(id) { document.getElementById(id).style.display = 'block'; }
-        function closeServicePopup(id) { document.getElementById(id).style.display = 'none'; }
+        // Functions to handle service popups
+        function openServicePopup(id) {
+            document.getElementById(id).style.display = 'block';
+        }
 
-        function toggleMenu() { document.querySelector('.nav-links').classList.toggle('active'); }
+        function closeServicePopup(id) {
+            document.getElementById(id).style.display = 'none';
+        }
 
+        // Function to toggle menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        // Function to toggle About Us content
         function toggleAboutContent() {
             const aboutContent = document.getElementById('about-content');
             aboutContent.style.display = aboutContent.style.display === 'block' ? 'none' : 'block';
