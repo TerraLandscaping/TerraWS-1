@@ -102,9 +102,9 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
     width: 100%;
     max-width: 300px;
+    gap: 5px;
 }
 
 .btn {
@@ -114,10 +114,8 @@ body, html {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2em;
-    margin: 5px;
     border: none;
     transition: background 0.3s, transform 0.3s;
-    text-align: center;
 }
 
 .btn:hover {
@@ -137,20 +135,15 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    transition: all 0.3s;
+    padding: 20px;
 }
 
-.about-content {
-    max-width: 60%;
-    text-align: left;
-    font-size: 1.5em;
-    margin: 0 auto;
-    display: none;
+.about-title {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .show-more-btn {
-    display: block;
     background: #4B2E1E;
     color: white;
     padding: 0.5em 2em;
@@ -160,7 +153,7 @@ body, html {
     border: none;
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
-    margin: 10px 0;
+    margin-bottom: 20px;
 }
 
 .show-more-btn:hover {
@@ -168,14 +161,24 @@ body, html {
     transform: scale(1.05);
 }
 
+.about-content {
+    display: none;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
 .about-image {
     width: 300px;
     height: 500px;
     background: #D2691E;
-    margin-left: 20px;
     border-radius: 10px;
-    margin: 0 auto;
-    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.about-section.toggled .about-content {
+    display: block;
 }
 
 .services-section {
@@ -311,7 +314,7 @@ body, html {
     transition: background 0.3s;
     cursor: pointer;
     margin: 0 auto;
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Added margin-bottom to create a gap */
 }
 
 .contact-section .btn:hover {
@@ -469,6 +472,10 @@ body, html {
     }
 
     .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
         width: auto;
     }
 
@@ -479,25 +486,22 @@ body, html {
     }
 
     .about-section {
-        flex-direction: column;
+        padding: 20px;
         align-items: center;
     }
 
-    .left-aligned-title {
-        font-size: 2em;
-        text-align: center;
-        margin-bottom: 10px;
+    .about-title {
+        font-size: 1.8em;
+    }
+
+    .show-more-btn {
+        width: 100%;
     }
 
     .about-content, .about-image {
         width: 90%;
         max-width: none;
         margin: 10px 0;
-    }
-
-    .show-more-btn {
-        width: 100%;
-        margin-top: 10px;
     }
 
     .services-grid {
@@ -522,57 +526,5 @@ body, html {
         width: 80%;
         justify-content: center;
         margin-bottom: 5px;
-    }
-}
-
-/* Desktop specific styles */
-@media (min-width: 769px) {
-    .left-aligned-title {
-        font-size: 2.5em;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .about-section {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about-content {
-        text-align: left;
-        display: none;
-    }
-
-    .about-image {
-        margin: 0 auto;
-        transition: all 0.3s;
-    }
-
-    .about-section.toggled .about-content {
-        display: block;
-        text-align: left;
-    }
-
-    .about-section.toggled .left-aligned-title,
-    .about-section.toggled .show-more-btn {
-        text-align: left;
-        width: auto;
-    }
-
-    .about-section.toggled .about-image {
-        margin-left: auto;
-        margin-right: 0;
-    }
-
-    .hero-buttons {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .show-more-btn {
-        width: auto;
     }
 }
