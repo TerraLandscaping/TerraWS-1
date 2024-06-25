@@ -99,6 +99,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px; /* Added gap between buttons */
 }
 
 .btn {
@@ -439,16 +440,17 @@ body, html {
         font-size: 1.2em;
     }
 
-    .btn {
-        width: 100%;
-        font-size: 1em;
-        margin-bottom: 10px;
-    }
-
     .hero-buttons {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 5px; /* Added gap between buttons */
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1em;
+        margin-bottom: 5px;
     }
 
     .about-section {
