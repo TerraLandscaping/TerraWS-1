@@ -398,7 +398,7 @@ body, html {
     .navbar .nav-links {
         display: none;
         flex-direction: column;
-        
+                align-items: center;
         width: 100%;
         background: #FF7F50;
         position: absolute;
