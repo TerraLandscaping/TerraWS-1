@@ -92,7 +92,7 @@
                     <li>Grass seeding and mulching</li>
                 </ul>
             </div>
-            <div class="service-item" onclick="openServicePopup('popup5')">
+            <div class=" service-item" onclick="openServicePopup('popup5')">
                 <div class="icon">🔧</div>
                 <h3>Specialty Services</h3>
                 <ul>
@@ -104,7 +104,7 @@
             </div>
         </div>
         <footer class="services-footer">
-            <p>We will do everything accept mowing. </p>
+            <p>We will do everything except mowing. </p>
             <p>Check back soon, our services are always expanding! </p>
         </footer>
     </section>
@@ -240,6 +240,7 @@
             const aboutContent = document.getElementById('about-content');
             aboutContent.style.display = aboutContent.style.display === 'block' ? 'none' : 'block';
         }
+
         function toggleAboutContent() {
             const aboutContent = document.getElementById('about-content');
             if (aboutContent.style.display === 'block') {
@@ -248,6 +249,7 @@
                 aboutContent.style.display = 'block';
             }
         }
+
         function toggleAboutContent() {
             const aboutContent = document.getElementById('about-content');
             const aboutSection = document.querySelector('.about-section');
@@ -260,14 +262,12 @@
                 title.style.textAlign = 'center';
                 title.style.width = '100%';
                 button.style.textAlign = 'center';
-                button.style.width = '100%';
                 image.style.margin = '0 auto';
             } else {
                 aboutContent.style.display = 'block';
                 title.style.textAlign = 'left';
                 title.style.width = 'auto';
                 button.style.textAlign = 'center';
-                button.style.width = '100%';
 
             }
         }
