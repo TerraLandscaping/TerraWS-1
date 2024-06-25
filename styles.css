@@ -131,6 +131,7 @@ body, html {
     max-width: 60%;
     text-align: left;
     font-size: 1.5em;
+    margin: 0 auto;
 }
 
 .about-image {
@@ -139,6 +140,7 @@ body, html {
     background: #D2691E;
     margin-left: 20px;
     border-radius: 10px;
+    margin: 0 auto;
 }
 
 .services-section {
@@ -246,6 +248,7 @@ body, html {
 .contact-content {
     text-align: left;
     font-size: 1.2em;
+    margin: 0 auto;
 }
 
 .contact-section ul {
@@ -272,6 +275,7 @@ body, html {
     border: none;
     transition: background 0.3s;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .contact-section .btn:hover {
@@ -464,6 +468,7 @@ body, html {
 
     .contact-content {
         width: 90%;
+        margin: 0 auto;
     }
 
     .contact-section .btn {
