@@ -240,6 +240,14 @@
             const aboutContent = document.getElementById('about-content');
             aboutContent.style.display = aboutContent.style.display === 'block' ? 'none' : 'block';
         }
+        function toggleAboutContent() {
+            const aboutContent = document.getElementById('about-content');
+            if (aboutContent.style.display === 'block') {
+                aboutContent.style.display = 'none';
+            } else {
+                aboutContent.style.display = 'block';
+            }
+        }
     </script>
 </body>
 </html>
