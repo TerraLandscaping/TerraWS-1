@@ -248,6 +248,30 @@
                 aboutContent.style.display = 'block';
             }
         }
+        function toggleAboutContent() {
+            const aboutContent = document.getElementById('about-content');
+            const aboutSection = document.querySelector('.about-section');
+            const title = document.querySelector('.left-aligned-title');
+            const button = document.querySelector('.show-more-btn');
+            const image = document.querySelector('.about-image');
+
+            if (aboutContent.style.display === 'block') {
+                aboutContent.style.display = 'none';
+                title.style.textAlign = 'center';
+                title.style.width = '100%';
+                button.style.textAlign = 'center';
+                button.style.width = '100%';
+                image.style.margin = '0 auto';
+            } else {
+                aboutContent.style.display = 'block';
+                title.style.textAlign = 'left';
+                title.style.width = 'auto';
+                button.style.textAlign = 'left';
+                button.style.width = 'auto';
+                image.style.marginLeft = 'auto';
+                image.style.marginRight = '0';
+            }
+        }
     </script>
 </body>
 </html>
