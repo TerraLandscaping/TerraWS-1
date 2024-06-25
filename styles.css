@@ -314,7 +314,7 @@ body, html {
     transition: background 0.3s;
     cursor: pointer;
     margin: 0 auto;
-    margin-bottom: 5px; /* Added margin-bottom to create a gap */
+    margin-bottom: 5px;
 }
 
 .contact-section .btn:hover {
