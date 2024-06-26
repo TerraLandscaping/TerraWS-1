@@ -154,8 +154,8 @@ body, html {
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
     margin-bottom: 20px;
-    width: auto;
-    white-space: nowrap;
+    width: auto; /* Ensures button does not resize */
+    white-space: nowrap; /* Prevents text wrapping */
 }
 
 .show-more-btn:hover {
@@ -185,20 +185,39 @@ body, html {
 
 .services-section {
     background-color: #FF7F50;
-    white-space: nowrap;
     overflow-x: auto;
+    white-space: nowrap;
 }
 
-.services-content {
+.services-grid {
     display: inline-flex;
-    flex-direction: column;
     gap: 20px;
 }
 
-.services-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    font-size: 1.2em;
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFCCCB;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-width: 250px;
+    white-space: normal;
+    cursor: pointer;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .services-footer {
@@ -478,8 +497,7 @@ body, html {
     }
 
     .show-more-btn {
-        width: auto;
-        white-space: nowrap;
+        width: 100%;
     }
 
     .about-content, .about-image {
@@ -492,8 +510,9 @@ body, html {
         display: block;
     }
 
-    .services-list {
-        font-size: 1em;
+    .service-item {
+        width: 90%;
+        margin: 10px auto;
     }
 
     .gallery {
