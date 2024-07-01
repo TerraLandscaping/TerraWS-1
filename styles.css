@@ -73,14 +73,29 @@ body, html {
     width: 100%;
 }
 
-.annual-hero {
-    background-color: #FAEBD7; /* Add background color or image if needed */
-    padding: 50px 20px;
+.annual-hero-content {
+    position: relative;
+    background: rgba(250, 235, 215, 0.9);
+    padding: 30px 60px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.annual-hero-content {
-    text-align: center;
-    color: #8B4513;
+.annual-hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+    color: #4B2E1E;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.annual-hero p {
+    font-size: 1.5em;
+    color: #4B2E1E;
+    margin: 10px 0 20px;
 }
 
 .placeholder-container {
@@ -92,15 +107,13 @@ body, html {
 }
 
 .placeholder-text-box {
-    background: rgba(250, 235, 215, 0.9); /* Match color and transparency with annual content */
-    padding: 40px 60px; /* Increase padding to make them larger */
+    background: rgba(250, 235, 215, 0.9);
+    padding: 20px 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1em; /* Smaller text */
     text-align: center;
-    font-size: 1.2em;
-    color: #4B2E1E;
-    width: calc(50% - 20px); /* Ensure two boxes per row with some margin */
-    margin: 10px;
+    max-width: 200px;
 }
 
 .about-section, .services-section, .contact-section, .footer {
