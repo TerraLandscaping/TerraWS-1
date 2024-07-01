@@ -124,15 +124,29 @@ body, html {
 }
 
 .annual-packages-hero {
-    background-color: #FAEBD7; /* Add background color or image if needed */
-    padding: 50px 20px;
+    background: url('Photos/Phuc2.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #8B4513;
+    position: relative;
+    width: 100%;
 }
 
 .annual-packages-hero-content {
-    text-align: center;
-    color: #8B4513;
+    position: relative;
+    background: rgba(250, 235, 215, 0.9);
+    padding: 30px 60px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 .grid-container {
     display: flex;
     flex-wrap: wrap;
