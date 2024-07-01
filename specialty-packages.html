@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional landscaping services with a personal touch in Portland, Maine. Contact us for garden installations, cleanups, patios, and more.">
-    <meta name="keywords" content="landscaping, garden installations, cleanups, patios, walkways, Portland Maine, Terra Landscaping">
+    <meta name="description" content="Specialty Packages - Terra Landscaping">
+    <meta name="keywords" content="specialty packages, landscaping, Terra Landscaping">
     <meta name="author" content="Terra Landscaping">
-    <title>Annual Packages - Terra Landscaping</title>
+    <title>Specialty Packages - Terra Landscaping</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +19,18 @@
         </div>
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <nav class="nav-links">
-            <a href="index.html#about" onclick="toggleAboutContent()">About Us</a>
-            <a href="index.html#services">Services</a>
-            <a href="index.html#portfolio" onclick="openGallery()">Portfolio <span class="dropdown-icon">&#9662;</span></a>
+            <a href="index.html">Home</a>
+            <a href="annual_packages.html">Annual Packages</a>
+            <a href="specialty_packages.html">Specialty Packages</a>
             <a href="index.html#contact">Contact Us</a>
         </nav>
     </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Specialty Packages</h1>
+            <p>Explore our specialty landscaping packages</p>
+        </div>
+    </section>
     <section id="contact" class="contact-section">
         <h2 class="right-aligned-title">Contact Us</h2>
         <div class="contact-content">
@@ -47,58 +53,8 @@
             </a>
         </div>
     </section>
-    <footer class="footer"></footer>
-
-    <div class="bottom-bar">
-        <button class="top-btn" onclick="scrollToTop()">Top ↑</button>
-    </div>
-
     <script>
-        // JavaScript to handle image click and overlay display
-        const expandableImages = document.querySelectorAll('.expandable');
-        const overlay = document.getElementById('overlay');
-        const overlayImg = document.getElementById('overlay-img');
-
-        expandableImages.forEach(img => {
-            img.addEventListener('click', () => {
-                overlayImg.src = img.src;
-                overlay.style.display = 'flex';
-            });
-        });
-
-        function closeOverlay() {
-            overlay.style.display = 'none';
-        }
-
-        // Function to scroll to the top of the page
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        // Function to toggle the gallery section
-        function toggleGallery() {
-            const galleryContent = document.querySelector('.gallery-content');
-            galleryContent.style.display = galleryContent.style.display === 'none' || galleryContent.style.display === '' ? 'block' : 'none';
-        }
-
-        // Function to open and expand the gallery section
-        function openGallery() {
-            const galleryContent = document.querySelector('.gallery-content');
-            if (galleryContent.style.display === 'none' || galleryContent.style.display === '') {
-                galleryContent.style.display = 'block';
-            }
-        }
-
-        // Functions to handle service popups
-        function openServicePopup(id) {
-            document.getElementById(id).style.display = 'block';
-        }
-
-        function closeServicePopup(id) {
-            document.getElementById(id).style.display = 'none';
-        }
-
-        // Function to toggle menu
+        // JavaScript to handle menu toggle
         function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
@@ -106,4 +62,3 @@
     </script>
 </body>
 </html>
-
