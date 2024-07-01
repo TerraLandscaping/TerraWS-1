@@ -140,23 +140,19 @@ body, html {
     padding: 20px;
     background-color: #FAEBD7; /* Ensure it matches the theme background */
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 .placeholder-text-box {
     background: rgba(250, 235, 215, 0.9); /* Match color and transparency with annual content */
-    padding: 40px;
+    padding: 40px; /* Increase padding to make them larger */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     font-size: 1.2em;
     color: #4B2E1E;
-    width: 45%; /* Adjust the width as needed */
+    width: calc(50% - 20px); /* Ensure two boxes per row with some margin */
     margin: 10px;
-    width: calc(50% - 40px); /* Ensure two boxes per row with some margin */
 }
-
-
 @media (max-width: 768px) {
 .about-section, .services-section, .contact-section, .footer {
     text-align: center;
