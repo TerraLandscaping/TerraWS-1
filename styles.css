@@ -135,24 +135,25 @@ body, html {
 
 .placeholder-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
-    gap: 20px; /* Gap between boxes */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     padding: 20px;
     background-color: #FAEBD7; /* Ensure it matches the theme background */
+    justify-items: center;
 }
 
 .placeholder-text-box {
-    background: transparent; /* Fully transparent background */
-    padding: 30px; /* Slightly larger padding */
+    background: transparent;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #4B2E1E;
-    width: 100%; /* Full width within grid column */
-    margin: 10px 0; /* Vertical margin for spacing */
+    width: 100%;
+    max-width: 400px; /* Adjust the width as needed */
+    margin: 10px;
 }
-
 @media (max-width: 768px) {
 .about-section, .services-section, .contact-section, .footer {
     text-align: center;
