@@ -134,12 +134,11 @@ body, html {
 }
 
 .placeholder-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+    gap: 20px; /* Gap between boxes */
     padding: 20px;
-    background: transparent;
-    flex-wrap: wrap;
+    background-color: #FAEBD7; /* Ensure it matches the theme background */
 }
 
 .placeholder-text-box {
@@ -150,11 +149,11 @@ body, html {
     text-align: center;
     font-size: 1.2em;
     color: #4B2E1E;
-    width: 48%; /* Adjust the width to fit a 2x2 grid */
-    margin: 10px;
+    width: 100%; /* Full width within grid column */
+    margin: 10px 0; /* Vertical margin for spacing */
 }
 
-
+@media (max-width: 768px) {
 .about-section, .services-section, .contact-section, .footer {
     text-align: center;
     padding: 50px 20px;
@@ -542,6 +541,10 @@ body, html {
         width: 90%; /* Adjust width for smaller screens */
     }
 
+    .placeholder-container {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+    
     .about-section {
         padding: 20px;
         align-items: center;
