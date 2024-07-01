@@ -143,16 +143,17 @@ body, html {
 }
 
 .placeholder-text-box {
-    background: rgba(250, 235, 215, 0.9);
-    padding: 20px;
+    background: transparent; /* Fully transparent background */
+    padding: 30px; /* Slightly larger padding */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     font-size: 1.2em;
     color: #4B2E1E;
-    width: 45%; /* Adjust the width as needed */
+    width: 48%; /* Adjust the width to fit a 2x2 grid */
     margin: 10px;
 }
+
 
 .about-section, .services-section, .contact-section, .footer {
     text-align: center;
@@ -535,6 +536,10 @@ body, html {
         width: auto;
         font-size: 1em;
         margin-bottom: 5px;
+    }
+    
+    .placeholder-text-box {
+        width: 90%; /* Adjust width for smaller screens */
     }
 
     .about-section {
