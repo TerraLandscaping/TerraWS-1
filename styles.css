@@ -123,36 +123,7 @@ body, html {
     transform: scale(1.05);
 }
 
-.annual-hero {
-    background-color: #FAEBD7; /* Add background color or image if needed */
-    padding: 50px 20px;
-}
 
-.annual-hero-content {
-    text-align: center;
-    color: #8B4513;
-}
-
-.placeholder-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: #FAEBD7; /* Ensure it matches the theme background */
-    flex-wrap: wrap;
-}
-
-.placeholder-text-box {
-    background: rgba(250, 235, 215, 0.9); /* Match color and transparency with annual content */
-    padding: 40px; /* Increase padding to make them larger */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    font-size: 1.2em;
-    color: #4B2E1E;
-    width: calc(50% - 20px); /* Ensure two boxes per row with some margin */
-    margin: 10px;
-}
 @media (max-width: 768px) {
 .about-section, .services-section, .contact-section, .footer {
     text-align: center;
