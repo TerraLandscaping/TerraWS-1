@@ -123,7 +123,7 @@ body, html {
     transform: scale(1.05);
 }
 
-.annual-packages-hero {
+.packages-hero {
     background: url('Photos/Phuc2.png') no-repeat center center/cover;
     height: 100vh;
     display: flex;
@@ -136,7 +136,7 @@ body, html {
     width: 100%;
 }
 
-.annual-packages-hero-content {
+.packages-hero-content {
     position: relative;
     background: rgba(250, 235, 215, 0.9);
     padding: 30px 60px;
