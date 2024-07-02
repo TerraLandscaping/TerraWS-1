@@ -98,13 +98,24 @@ body, html {
     margin: 10px 0 20px;
 }
 
-.hero-buttons, .package-buttons {
+.package-buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 300px;
     gap: 5px;
+}
+
+.packages-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.packages-row .btn {
+    flex: 1;
+    margin: 0 5px;
 }
 
 .btn {
@@ -550,12 +561,22 @@ body, html {
         font-size: 1.2em;
     }
 
-    .hero-buttons {
+    .package-buttons {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        max-width: 300px;
         gap: 5px;
-        width: auto;
+    }
+
+    .packages-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .packages-row .btn {
+        margin-bottom: 10px;
     }
 
     .btn {
