@@ -148,22 +148,36 @@ body, html {
     align-items: center;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+.list-container {
+    display: flex;
+    justify-content: space-around;
     margin-top: 20px;
-    width: 80%;
 }
 
-.grid-item {
+.list-column {
     background: rgba(250, 235, 215, 0.9); /* Match color and transparency with annual content */
-    padding: 40px 60px; /* Increase padding to make them larger */
+    padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
     text-align: center;
-    font-size: 1.5em; /* Larger text */
+}
+
+.list-column h2 {
+    font-size: 1.8em;
     color: #4B2E1E;
+    margin-bottom: 10px;
+}
+
+.list-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-column ul li {
+    font-size: 1.2em;
+    color: #4B2E1E;
+    margin: 10px 0;
 }
 
 .about-section, .services-section, .contact-section, .footer {
