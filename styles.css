@@ -70,6 +70,7 @@ body, html {
     color: #8B4513;
     position: relative;
     width: 100%;
+    min-height: 100vh;
     padding-top: 60px; /* Add spacing to avoid overlap with navbar */
 }
 
