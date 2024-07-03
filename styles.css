@@ -274,9 +274,8 @@ body, html {
     background: rgba(0, 0, 0, 0.0); 
     padding: 20px 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 30%;
-    text-align: center;
+    text-align: left;
     margin: 0 5px; /* Add margin for spacing */
 }
 
