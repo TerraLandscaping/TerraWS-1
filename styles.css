@@ -148,6 +148,13 @@ body, html {
     padding-top: 60px; /* Add spacing to avoid overlap with navbar */
 }
 
+.packages-hero-content h1 {
+    font-size: 3.5em;
+    margin: 0;
+    color: #4B2E1E;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .packages-hero-content {
     position: relative;
     background: rgba(250, 235, 215, 0.9);
