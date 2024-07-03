@@ -62,7 +62,6 @@ body, html {
 
 .hero {
     background: url('Photos/Phuc2.png') no-repeat center center/cover;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,6 +70,7 @@ body, html {
     color: #8B4513;
     position: relative;
     width: 100%;
+    padding-top: 60px; /* Add spacing to avoid overlap with navbar */
 }
 
 .hero-content {
@@ -136,7 +136,6 @@ body, html {
 
 .packages-hero {
     background: url('Photos/Phuc2.png') no-repeat center center/cover;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,6 +145,7 @@ body, html {
     position: relative;
     width: 100%;
     padding-top: 60px; /* Add spacing to avoid overlap with navbar */
+    padding-bottom: 40px; /* Add padding to bottom to ensure spacing */
 }
 
 .packages-hero-content h1 {
@@ -178,6 +178,7 @@ body, html {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    flex-wrap: wrap; /* Ensure the content wraps and stays within the section */
 }
 
 .list-column {
@@ -187,7 +188,9 @@ body, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 30%;
     text-align: center;
-    margin: 0 10px; /* Add margin for spacing */
+    margin: 10px; /* Add margin for spacing */
+    flex: 1; /* Allow flexibility */
+    min-width: 280px; /* Ensure minimum width for columns */
 }
 
 .list-column h2 {
