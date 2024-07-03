@@ -225,7 +225,44 @@ body, html {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.list-column.create-your-own {
+    background: rgba(250, 235, 215, 0.9); /* Match color and transparency with annual content */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    text-align: center;
+    margin: 10px; /* Add margin for spacing */
+    flex: 1; /* Allow flexibility */
+    min-width: 280px; /* Ensure minimum width for columns */
+}
 
+.list-column.create-your-own h2 {
+    font-size: 1.8em;
+    color: #4B2E1E;
+    margin-bottom: 10px;
+}
+
+.list-column.create-your-own ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-column.create-your-own ul li {
+    font-size: 1.2em;
+    color: #4B2E1E;
+    margin: 10px 0;
+}
+
+.list-column.create-your-own h3 {
+    font-size: 1.5em;
+    color: #4B2E1E;
+    margin-bottom: 10px;
+    background: rgba(250, 235, 215, 0.9);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .about-section, .services-section, .contact-section, .footer {
     text-align: center;
     padding: 50px 20px;
