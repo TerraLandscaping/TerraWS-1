@@ -234,7 +234,8 @@ body, html {
     text-align: center;
     margin: 10px; /* Add margin for spacing */
     flex: 1; /* Allow flexibility */
-    min-width: 280px; /* Ensure minimum width for columns */
+    min-width: 280px;
+    max-width: 580px;/* Ensure minimum width for columns */
 }
 
 .list-column.create-your-own h2 {
