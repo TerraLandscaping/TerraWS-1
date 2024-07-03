@@ -271,7 +271,7 @@ body, html {
 }
 
 .create-your-own .inner-list-column {
-    background: rgba(250, 235, 215, 0.9); /* Match color and transparency with parent */
+    background: rgba(0, 0, 0, 0.0); 
     padding: 20px 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
