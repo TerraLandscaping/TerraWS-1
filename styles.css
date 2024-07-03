@@ -161,6 +161,19 @@ body, html {
     margin-top: 20px; /* Add spacing from top */
 }
 
+.packages-hero-content h1 {
+    font-size: 3.5em;
+    margin: 0;
+    color: #4B2E1E;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.packages-hero-content p {
+    font-size: 1.5em;
+    color: #4B2E1E;
+    margin: 10px 0 20px;
+}
+
 .list-container {
     display: flex;
     justify-content: space-between;
