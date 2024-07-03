@@ -264,6 +264,33 @@ body, html {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.create-your-own .inner-list-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.create-your-own .inner-list-column {
+    background: rgba(250, 235, 215, 0.9); /* Match color and transparency with parent */
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    text-align: center;
+    margin: 0 5px; /* Add margin for spacing */
+}
+
+.create-your-own .inner-list-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.create-your-own .inner-list-column ul li {
+    font-size: 1.2em;
+    color: #4B2E1E;
+    margin: 10px 0;
+}
+
 .about-section, .services-section, .contact-section, .footer {
     text-align: center;
     padding: 50px 20px;
