@@ -110,7 +110,7 @@ body, html {
 
 .packages-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
 }
 
@@ -275,7 +275,7 @@ body, html {
     padding: 20px 15px;
     border-radius: 10px;
     width: 30%;
-    text-align: left;
+    text-align: center;
     margin: 0 5px; /* Add margin for spacing */
 }
 
