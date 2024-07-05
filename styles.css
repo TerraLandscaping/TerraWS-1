@@ -189,7 +189,7 @@ body, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 30%;
     text-align: center;
-    margin: 10px; /* Add margin for spacing */
+    margin: 10px 20px; /* Increase horizontal margins for spacing */
     flex: 1; /* Allow flexibility */
     min-width: 280px; /* Ensure minimum width for columns */
 }
@@ -232,7 +232,7 @@ body, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 30%;
     text-align: center;
-    margin: 10px; /* Add margin for spacing */
+    margin: 10px 20px; /* Increase horizontal margins for spacing */
     flex: 1; /* Allow flexibility */
     min-width: 280px;
     max-width: 580px;/* Ensure minimum width for columns */
