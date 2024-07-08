@@ -136,7 +136,7 @@ body, html {
 }
 
 .packages-hero {
-    background: url('Photos/Phuc2.png') no-repeat center center/cover;
+    background: url('Photos/Artboard1.png') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -231,12 +231,12 @@ body, html {
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 40%; /* Increase the width */
+    width: 50%; /* Increase the width */
     text-align: center;
     margin: 10px 20px; /* Increase horizontal margins for spacing */
     flex: 1; /* Allow flexibility */
     min-width: 280px;
-    max-width: 580px; /* Ensure minimum width for columns */
+    max-width: 700px; /* Ensure minimum width for columns */
 }
 
 .list-column.create-your-own h2 {
