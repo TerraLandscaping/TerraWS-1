@@ -225,6 +225,7 @@ body, html {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .list-column.create-your-own {
     background: rgba(250, 235, 215, 0.9); /* Match color and transparency with annual content */
     padding: 20px 30px;
@@ -235,7 +236,7 @@ body, html {
     margin: 10px 20px; /* Increase horizontal margins for spacing */
     flex: 1; /* Allow flexibility */
     min-width: 280px;
-    max-width: 580px;/* Ensure minimum width for columns */
+    max-width: 580px; /* Ensure minimum width for columns */
 }
 
 .list-column.create-your-own h2 {
@@ -264,6 +265,7 @@ body, html {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .create-your-own .inner-list-container {
     display: flex;
     justify-content: space-between;
@@ -288,9 +290,7 @@ body, html {
     font-size: 1.2em;
     color: #4B2E1E;
     margin: 10px 0;
-    min-height: 1.25em; /* Set a minimum height to align rows */
-    display: flex;
-    align-items: center; /* Center align text vertically */
+    min-height: 30px; /* Ensure consistent row height for alignment */
 }
 
 .about-section, .services-section, .contact-section, .footer {
