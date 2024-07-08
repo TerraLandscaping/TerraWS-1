@@ -288,7 +288,7 @@ body, html {
     font-size: 1.2em;
     color: #4B2E1E;
     margin: 10px 0;
-    min-height: 2.5em; /* Set a minimum height to align rows */
+    min-height: 7em; /* Set a minimum height to align rows */
     display: flex;
     align-items: center; /* Center align text vertically */
 }
