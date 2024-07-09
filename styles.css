@@ -214,8 +214,8 @@ body, html {
     transform: scale(1.1);
 }
 
-.collapsed ul,
-.collapsed h3 {
+.collapsed .list-column ul,
+.collapsed .list-column h3 {
     display: none;
 }
 
