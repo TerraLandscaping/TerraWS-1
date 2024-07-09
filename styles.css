@@ -214,11 +214,10 @@ body, html {
     transform: scale(1.1);
 }
 
-.collapsed .list-column ul,
-.collapsed .list-column h3 {
+.collapsed ul,
+.collapsed h3 {
     display: none;
 }
-
 
 .list-column h2 {
     font-size: 1.8em;
@@ -389,8 +388,6 @@ body, html {
     border-radius: 10px;
     display: block; /* Ensure no extra space at the bottom */
 }
-
-
 
 .about-section.toggled .about-content {
     display: block;
