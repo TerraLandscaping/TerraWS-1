@@ -276,7 +276,6 @@ body, html {
     max-width: 700px; /* Adjust this width if necessary */
 }
 
-
 .create-your-own .inner-list-container {
     display: flex;
     justify-content: space-between;
