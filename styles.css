@@ -192,7 +192,6 @@ body, html {
     margin: 10px 20px; /* Increase horizontal margins for spacing */
     flex: 1; /* Allow flexibility */
     min-width: 280px; /* Ensure minimum width for columns */
-    cursor: pointer; /* Make the list containers clickable */
 }
 
 .list-column h2 {
@@ -201,14 +200,30 @@ body, html {
     margin-bottom: 10px;
 }
 
-.list-column ul,
-.list-column h3 {
-    display: none; /* Hide the list contents and h3 by default */
+.list-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-column ul li {
+    font-size: 1.2em;
+    color: #4B2E1E;
+    margin: 10px 0;
 }
 
 .list-footer {
     text-align: center;
     margin-top: 20px;
+}
+
+.list-column h3 {
+    font-size: 1.5em;
+    color: #4B2E1E;
+    margin-bottom: 10px;
+    background: rgba(250, 235, 215, 0.9);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .list-column.create-your-own {
@@ -228,6 +243,37 @@ body, html {
     font-size: 1.8em;
     color: #4B2E1E;
     margin-bottom: 10px;
+}
+
+.list-column.create-your-own ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-column.create-your-own ul li {
+    font-size: 1.2em;
+    color: #4B2E1E;
+    margin: 10px 0;
+}
+
+.list-column.create-your-own h3 {
+    font-size: 1.5em;
+    color: #4B2E1E;
+    margin-bottom: 10px;
+    background: rgba(250, 235, 215, 0.9);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.center-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.center-container .list-column {
+    width: auto;
+    max-width: 700px; /* Adjust this width if necessary */
 }
 
 .create-your-own .inner-list-container {
@@ -317,6 +363,8 @@ body, html {
     border-radius: 10px;
     display: block; /* Ensure no extra space at the bottom */
 }
+
+
 
 .about-section.toggled .about-content {
     display: block;
