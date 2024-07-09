@@ -265,6 +265,17 @@ body, html {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.center-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.center-container .list-column {
+    width: auto;
+    max-width: 700px; /* Adjust this width if necessary */
+}
+
 
 .create-your-own .inner-list-container {
     display: flex;
@@ -290,7 +301,7 @@ body, html {
     font-size: 1.2em;
     color: #4B2E1E;
     margin: 10px 0;
-    min-height: 35px; /* Ensure consistent row height for alignment */
+    min-height: 30px; /* Ensure consistent row height for alignment */
 }
 
 .about-section, .services-section, .contact-section, .footer {
