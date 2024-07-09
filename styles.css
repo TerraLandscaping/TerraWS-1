@@ -350,13 +350,11 @@ body, html {
 }
 
 .about-image {
-    width: 100%;
-    height: auto;
-    background: url('Photos/verticalteam2.JPEG') no-repeat center center/cover;
+    width: 150px;
+    height: 375px;
+    background: #D2691E;
     border-radius: 10px;
     margin-top: 20px;
-}
-
 }
 
 .about-section.toggled .about-content {
