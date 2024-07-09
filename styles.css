@@ -290,7 +290,7 @@ body, html {
     font-size: 1.2em;
     color: #4B2E1E;
     margin: 10px 0;
-    min-height: 30px; /* Ensure consistent row height for alignment */
+    min-height: 35px; /* Ensure consistent row height for alignment */
 }
 
 .about-section, .services-section, .contact-section, .footer {
