@@ -239,7 +239,7 @@
         // JavaScript to handle collapse functionality
         function toggleCollapse(button) {
             const listColumn = button.closest('.list-column');
-            listColumn.classList.toggle('collapsed');
+            listColumn.parentElement.classList.toggle('collapsed');
         }
     </script>
 </body>
