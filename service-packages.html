@@ -83,6 +83,7 @@
         <div class="list-container">
             <div class="list-column">
                 <h2>Premium Package</h2>
+                <button class="collapse-btn" onclick="toggleCollapse(this)">×</button>
                 <ul>
                     <li>Spring Cleanup</li>
                     <li>Fall Cleanup</li>
@@ -109,6 +110,7 @@
             </div>
             <div class="list-column">
                 <h2>Landscaping Package</h2>
+                <button class="collapse-btn" onclick="toggleCollapse(this)">×</button>
                 <ul>
                     <li>Spring Cleanup</li>
                     <li>Fall Cleanup</li>
@@ -130,6 +132,7 @@
             </div>
             <div class="list-column">
                 <h2>External Cleaning Package</h2>
+                <button class="collapse-btn" onclick="toggleCollapse(this)">×</button>
                 <ul>
                     <li>Power Wash House</li>
                     <li>Power Wash Driveway</li>
@@ -156,6 +159,7 @@
         <div class="list-container center-container">
             <div class="list-column create-your-own">
                 <h2>À la Carte Annual Services</h2>
+                <button class="collapse-btn" onclick="toggleCollapse(this)">×</button>
                 <div class="inner-list-container">
                     <div class="inner-list-column">
                         <ul>
@@ -221,8 +225,7 @@
                 Facebook
             </a>
             <a href="https://www.instagram.com/207terra?igsh=" class="btn instagram-btn" target="_blank">
-                <img src="Photos/Instagram_logo_2016.svg" alt="Instagram Logo" class="btn-icon">
-                Instagram
+                <img src="Photos/Instagram_logo_2016.svg" alt="Instagram Logo">
             </a>
         </div>
     </section>
@@ -231,6 +234,12 @@
         function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
+        }
+
+        // JavaScript to handle collapse functionality
+        function toggleCollapse(button) {
+            const listColumn = button.closest('.list-column');
+            listColumn.classList.toggle('collapsed');
         }
     </script>
 </body>
