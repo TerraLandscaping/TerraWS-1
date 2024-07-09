@@ -33,7 +33,7 @@
             <p>or</p>
             <p>Choose from one of our premade bundles</p>
         </div>
-        <div class="list-container">
+        <div class="list-container" data-toggle="list-column-1">
             <div class="list-column create-your-own">
                 <h2>Create your own service package</h2>
                 <div class="inner-list-container">
@@ -67,6 +67,8 @@
                 </div>
                 <h3>*only available when bundled with other services</h3>
             </div>
+        </div>
+        <div class="list-container" data-toggle="list-column-2">
             <div class="list-column">
                 <h2>Save money when you bundle</h2>
                 <ul>
@@ -79,7 +81,7 @@
                 <h3>Premade service packages below</h3>
             </div>
         </div>
-        <div class="list-container center-container">
+        <div class="list-container center-container" data-toggle="list-column-3">
             <div class="list-column create-your-own">
                 <h2>À la Carte Annual Services</h2>
                 <div class="inner-list-container">
@@ -129,7 +131,7 @@
                 <h3>Our services are always expanding</h3>
             </div>
         </div>
-        <div class="list-container">
+        <div class="list-container" data-toggle="list-column-4">
             <div class="list-column">
                 <h2>Premium Package</h2>
                 <ul>
@@ -156,6 +158,8 @@
                     $250.00
                 </h3>
             </div>
+        </div>
+        <div class="list-container" data-toggle="list-column-5">
             <div class="list-column">
                 <h2>Landscaping Package</h2>
                 <ul>
@@ -177,6 +181,8 @@
                     $195.83
                 </h3>
             </div>
+        </div>
+        <div class="list-container" data-toggle="list-column-6">
             <div class="list-column">
                 <h2>External Cleaning Package</h2>
                 <ul>
@@ -231,6 +237,17 @@
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
+
+        // JavaScript to handle the list container toggle
+        document.querySelectorAll('.list-column h2').forEach(column => {
+            column.addEventListener('click', () => {
+                const container = column.parentNode;
+                const ul = container.querySelectorAll('ul');
+                const h3 = container.querySelector('h3');
+                ul.forEach(item => item.style.display = item.style.display === 'block' ? 'none' : 'block');
+                if (h3) h3.style.display = h3.style.display === 'block' ? 'none' : 'block';
+            });
+        });
     </script>
 </body>
 </html>
