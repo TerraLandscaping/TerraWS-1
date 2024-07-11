@@ -222,7 +222,7 @@ body, html {
 .collapsed {
     align-self: flex-start;
     min-height: 100px
-    min-width: 300px;
+    min-width: 350px;
 }
 
 .list-column h2 {
