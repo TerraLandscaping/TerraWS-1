@@ -400,13 +400,11 @@ body, html {
 }
 
 .services-section {
-    background: url('Photos/ServiceVenn.png');
-    background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: 100% 100%;
+    background: url('Photos/ServiceVenn.png') no-repeat center center/cover;
+    background-size: cover; /* Ensure the background image scales to cover the entire width */
     overflow-x: auto;
     white-space: nowrap;
-
+    min-height: 950px;
 }
 
 .services-options {
