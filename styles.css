@@ -399,7 +399,7 @@ body, html {
 }
 
 .services-section {
-    background-color: #FF7F45;
+    background: url('Photos/ServiceVenn.png') no-repeat center center/cover;
     overflow-x: auto;
     white-space: nowrap;
 }
