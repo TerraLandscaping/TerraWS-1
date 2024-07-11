@@ -218,7 +218,9 @@ body, html {
 .collapsed h3 {
     display: none;
 }
-
+.collapsed .list-column {
+align-self: start;
+}
 .list-column h2 {
     font-size: 1.8em;
     color: #4B2E1E;
