@@ -400,7 +400,7 @@ body, html {
 }
 
 .services-section {
-    background: url('Photos/ServiceVenn.png') no-repeat center center/cover;
+    background: url('Photos/ServiceVenn.png') no-repeat center;
     background-size: contain;
     overflow-x: auto;
     white-space: nowrap;
