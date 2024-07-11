@@ -219,6 +219,10 @@ body, html {
     display: none;
 }
 
+.collapsed {
+    align-self: flex-start;
+}
+
 .list-column h2 {
     font-size: 1.8em;
     color: #4B2E1E;
