@@ -221,7 +221,8 @@ body, html {
 
 .collapsed {
     align-self: flex-start;
-    min-height: 135px
+    min-height: 100px
+    width: 30%;
 }
 
 .list-column h2 {
