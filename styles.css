@@ -221,11 +221,9 @@ body, html {
 
 .collapsed {
     align-self: flex-start;
-    min-height: 125px
+    min-height: 135px
 }
-.collapsed h2{
-    margin: 50px;
-}
+
 .list-column h2 {
     font-size: 1.8em;
     color: #4B2E1E;
