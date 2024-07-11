@@ -191,7 +191,7 @@ body, html {
     text-align: center;
     margin: 10px 20px; /* Increase horizontal margins for spacing */
     flex: 1; /* Allow flexibility */
-    min-width: 350px; /* Ensure minimum width for columns */
+    min-width: 400px; /* Ensure minimum width for columns */
     position: relative; /* To position the 'X' button */
 }
 .collapse-btn {
