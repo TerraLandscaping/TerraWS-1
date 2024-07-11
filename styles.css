@@ -401,9 +401,10 @@ body, html {
 
 .services-section {
     background: url('Photos/ServiceVenn.png') no-repeat center;
-    background-size: contain;
+    background-size: auto;
     overflow-x: auto;
     white-space: nowrap;
+    min-height: 10
 }
 
 .services-options {
