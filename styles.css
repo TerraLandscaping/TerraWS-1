@@ -190,7 +190,7 @@ body, html {
     width: 30%;
     text-align: center;
     margin: 10px 20px; /* Increase horizontal margins for spacing */
-    flex: 1; /* Allow flexibility */
+    
     min-width: 280px; /* Ensure minimum width for columns */
     position: relative; /* To position the 'X' button */
 }
@@ -218,9 +218,7 @@ body, html {
 .collapsed h3 {
     display: none;
 }
-.collapsed .list-column {
-align-self: start;
-}
+
 .list-column h2 {
     font-size: 1.8em;
     color: #4B2E1E;
