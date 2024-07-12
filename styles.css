@@ -194,6 +194,7 @@ body, html {
     min-width: 500px; /* Ensure minimum width for columns */
     position: relative; /* To position the 'X' button */
 }
+
 .collapse-btn {
     position: absolute;
     top: 10px;
@@ -221,7 +222,7 @@ body, html {
 
 .collapsed {
     align-self: flex-start;
-    min-height: 100px
+    min-height: 100px;
     min-width: 350px;
 }
 
@@ -296,6 +297,7 @@ body, html {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .center-container {
     display: flex;
     justify-content: center;
@@ -697,8 +699,6 @@ body, html {
         margin: 0 auto;
     }
 
-
-
     .navbar .nav-links.active {
         display: flex;
     }
@@ -823,4 +823,3 @@ body, html {
     padding: 5px 10px;
     font-size: 0.8em;
 }
-
