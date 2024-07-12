@@ -802,3 +802,25 @@ body, html {
         margin-bottom: 20px;
     }
 }
+
+/* Navbar and Bottom Bar Default Styles */
+.navbar, .bottom-bar {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Shrinked Styles */
+.navbar.shrink, .bottom-bar.shrink {
+    height: 40px;
+    padding: 5px 10px;
+}
+
+.navbar .logo img.shrink, .bottom-bar .top-btn.shrink {
+    height: 30px;
+}
+
+/* Adjustments for Buttons */
+.navbar .nav-links a {
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+
