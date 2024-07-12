@@ -56,23 +56,19 @@
     </section>
     <section id="services" class="services-section">
         <h2 class="centered-title">Our Services</h2>
-        
     </section>
     <section id="portfolio" class="gallery-section">
-    <div class="gallery-header" onclick="toggleGallery()">Portfolio <span class="dropdown-icon">&#9662;</span></div>
-    <div class="gallery-content">
-        <div class="gallery">
-            <div class="gallery-item"><img src="Photos/CapeBnA.png" alt="Placeholder Image 1"></div>
-            <div class="gallery-item"><img src="Photos/LeslieBnA1.png" alt="Placeholder Image 2"></div>
-            <div class="gallery-item"><img src="Photos/MeredithNeighborBnARight.png" alt="Placeholder Image 3"></div>
-            <div class="gallery-item"><img src="Photos/BPatio.jpeg" alt="Placeholder Image 4"></div>
-            <div class="gallery-item"><img src="Photos/APatio.jpeg" alt="Placeholder Image 5"></div>
-            
-
+        <div class="gallery-header" onclick="toggleGallery()">Portfolio <span class="dropdown-icon">&#9662;</span></div>
+        <div class="gallery-content">
+            <div class="gallery">
+                <div class="gallery-item"><img src="Photos/CapeBnA.png" alt="Placeholder Image 1"></div>
+                <div class="gallery-item"><img src="Photos/LeslieBnA1.png" alt="Placeholder Image 2"></div>
+                <div class="gallery-item"><img src="Photos/MeredithNeighborBnARight.png" alt="Placeholder Image 3"></div>
+                <div class="gallery-item"><img src="Photos/BPatio.jpeg" alt="Placeholder Image 4"></div>
+                <div class="gallery-item"><img src="Photos/APatio.jpeg" alt="Placeholder Image 5"></div>
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
     <section id="contact" class="contact-section">
         <h2 class="right-aligned-title">Contact Us</h2>
         <div class="contact-content">
@@ -95,104 +91,84 @@
             </a>
         </div>
     </section>
-    <footer class="footer"></footer>
-
     <div class="bottom-bar">
         <button class="top-btn" onclick="scrollToTop()">Top ↑</button>
     </div>
-
     <div class="overlay" id="overlay">
         <img src="" alt="Expanded Image" id="overlay-img">
         <button class="close-btn" onclick="closeOverlay()">X</button>
     </div>
+    <script>
+        // JavaScript to handle menu toggle
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+        // JavaScript to handle image click and overlay display
+        const expandableImages = document.querySelectorAll('.gallery-item img');
+        const overlay = document.getElementById('overlay');
+        const overlayImg = document.getElementById('overlay-img');
 
-<script>
-    // JavaScript to handle image click and overlay display
-    const expandableImages = document.querySelectorAll('.gallery-item img');
-    const overlay = document.getElementById('overlay');
-    const overlayImg = document.getElementById('overlay-img');
-
-    expandableImages.forEach(img => {
-        img.addEventListener('click', () => {
-            overlayImg.src = img.src;
-            overlay.style.display = 'flex';
+        expandableImages.forEach(img => {
+            img.addEventListener('click', () => {
+                overlayImg.src = img.src;
+                overlay.style.display = 'flex';
+            });
         });
-    });
 
-    function closeOverlay() {
-        overlay.style.display = 'none';
-    }
-
-    // Function to scroll to the top of the page
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // Function to toggle the gallery section
-    function toggleGallery() {
-        const galleryContent = document.querySelector('.gallery-content');
-        galleryContent.style.display = galleryContent.style.display === 'none' || galleryContent.style.display === '' ? 'block' : 'none';
-    }
-
-    // Function to open and expand the gallery section
-    function openGallery() {
-        const galleryContent = document.querySelector('.gallery-content');
-        if (galleryContent.style.display === 'none' || galleryContent.style.display === '') {
-            galleryContent.style.display = 'block';
+        function closeOverlay() {
+            overlay.style.display = 'none';
         }
-    }
 
-    // Functions to handle service popups
-    function openServicePopup(id) {
-        document.getElementById(id).style.display = 'block';
-    }
-
-    function closeServicePopup(id) {
-        document.getElementById(id).style.display = 'none';
-    }
-
-    // Function to toggle menu
-    function toggleMenu() {
-        const navLinks = document.querySelector('.nav-links');
-        navLinks.classList.toggle('active');
-    }
-
-    // Function to toggle About Us content
-    function toggleAboutContent() {
-        const aboutContent = document.getElementById('about-content');
-        aboutContent.style.display = aboutContent.style.display === 'block' ? 'none' : 'block';
-    }
-
-    function toggleAboutContent() {
-        const aboutContent = document.getElementById('about-content');
-        if (aboutContent.style.display === 'block') {
-            aboutContent.style.display = 'none';
-        } else {
-            aboutContent.style.display = 'block';
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-    }
 
-    function toggleAboutContent() {
-        const aboutContent = document.getElementById('about-content');
-        const aboutSection = document.querySelector('.about-section');
-        const title = document.querySelector('.left-aligned-title');
-        const button = document.querySelector('.show-more-btn');
-        const image = document.querySelector('.about-image');
-
-        if (aboutContent.style.display === 'block') {
-            aboutContent.style.display = 'none';
-            title.style.textAlign = 'center';
-            title.style.width = '100%';
-            button.style.textAlign = 'center';
-            image.style.margin = '0 auto';
-        } else {
-            aboutContent.style.display = 'block';
-            title.style.textAlign = 'left';
-            title.style.width = 'auto';
-            button.style.textAlign = 'center';
-
+        // Function to toggle the gallery section
+        function toggleGallery() {
+            const galleryContent = document.querySelector('.gallery-content');
+            galleryContent.style.display = galleryContent.style.display === 'none' || galleryContent.style.display === '' ? 'block' : 'none';
         }
-    }
+
+        // Function to open and expand the gallery section
+        function openGallery() {
+            const galleryContent = document.querySelector('.gallery-content');
+            if (galleryContent.style.display === 'none' || galleryContent.style.display === '') {
+                galleryContent.style.display = 'block';
+            }
+        }
+
+        // Functions to handle service popups
+        function openServicePopup(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+
+        function closeServicePopup(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+
+        // Function to toggle About Us content
+        function toggleAboutContent() {
+            const aboutContent = document.getElementById('about-content');
+            const aboutSection = document.querySelector('.about-section');
+            const title = document.querySelector('.left-aligned-title');
+            const button = document.querySelector('.show-more-btn');
+            const image = document.querySelector('.about-image');
+
+            if (aboutContent.style.display === 'block') {
+                aboutContent.style.display = 'none';
+                title.style.textAlign = 'center';
+                title.style.width = '100%';
+                button.style.textAlign = 'center';
+                image.style.margin = '0 auto';
+            } else {
+                aboutContent.style.display = 'block';
+                title.style.textAlign = 'left';
+                title.style.width = 'auto';
+                button.style.textAlign = 'center';
+            }
+        }
     </script>
     <script>
         document.addEventListener('scroll', function() {
@@ -213,8 +189,7 @@
                 logoImg.classList.remove('shrink');
                 topBtn.classList.remove('shrink');
             }
-            });
-        </script>
+        });
+    </script>
 </body>
-
 </html>
