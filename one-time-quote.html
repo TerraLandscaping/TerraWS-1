@@ -31,17 +31,15 @@
             <h1>Project-Based Services</h1>
             <p>Get a free quote and walkaround for all single jobs</p>
         </div>
-
-            <div class="list-column">
-                <h2>Single Visits</h2>
-                <ul>
-                    <li>Send us an email or text with pictures and a description of the work you want done</li>
-                    <li>We will give you a free quote based on the photos</li>
-                    <li>Or come and do a walk around for better details depending on the project</li>
-                    <li>Check our services list on the home page for a complete list of services</li>
-                <h3>Discounts on single visit labor and materials for subscribers</h3>
-                </ul>
-            </div>
+        <div class="list-column">
+            <h2>Single Visits</h2>
+            <ul>
+                <li>Send us an email or text with pictures and a description of the work you want done</li>
+                <li>We will give you a free quote based on the photos</li>
+                <li>Or come and do a walk around for better details depending on the project</li>
+                <li>Check our services list on the home page for a complete list of services</li>
+            <h3>Discounts on single visit labor and materials for subscribers</h3>
+            </ul>
         </div>
     </section>
     <section id="contact" class="contact-section">
@@ -74,26 +72,26 @@
         }
     </script>
     <script>
-        document.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            const bottomBar = document.querySelector('.bottom-bar');
-            const logoImg = document.querySelector('.navbar .logo img');
-            const topBtn = document.querySelector('.bottom-bar .top-btn');
-            const scrollPosition = window.scrollY;
-    
-            if (scrollPosition > 50) {
-                navbar.classList.add('shrink');
-                bottomBar.classList.add('shrink');
-                logoImg.classList.add('shrink');
-                topBtn.classList.add('shrink');
-            } else {
-                navbar.classList.remove('shrink');
-                bottomBar.classList.remove('shrink');
-                logoImg.classList.remove('shrink');
-                topBtn.classList.remove('shrink');
-            }
-        });
-    </script>
+    document.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        const bottomBar = document.querySelector('.bottom-bar');
+        const logoImg = document.querySelector('.navbar .logo img');
+        const topBtn = document.querySelector('.bottom-bar .top-btn');
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 50) {
+            navbar.classList.add('shrink');
+            bottomBar.classList.add('shrink');
+            logoImg.classList.add('shrink');
+            topBtn.classList.add('shrink');
+        } else {
+            navbar.classList.remove('shrink');
+            bottomBar.classList.remove('shrink');
+            logoImg.classList.remove('shrink');
+            topBtn.classList.remove('shrink');
+        }
+    });
+</script>
 
 </body>
 </html>
