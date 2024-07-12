@@ -242,15 +242,15 @@
 
         // JavaScript to handle collapse functionality
         function toggleCollapse(id) {
-        const listColumn = document.getElementById(id);
-        listColumn.classList.toggle('collapsed');
-        const button = listColumn.querySelector('.collapse-btn');
-        if (listColumn.classList.contains('collapsed')) {
-            button.innerHTML = '↓';
-        } else {
-            button.innerHTML = '×';
+            const listColumn = document.getElementById(id);
+            listColumn.classList.toggle('collapsed');
+            const button = listColumn.querySelector('.collapse-btn');
+            if (listColumn.classList.contains('collapsed')) {
+                button.innerHTML = '↓';
+            } else {
+                button.innerHTML = '×';
+            }
         }
-    }
     </script>
     <script>
     document.addEventListener('scroll', function() {
