@@ -252,5 +252,27 @@
         }
     }
     </script>
+    <script>
+    document.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        const bottomBar = document.querySelector('.bottom-bar');
+        const logoImg = document.querySelector('.navbar .logo img');
+        const topBtn = document.querySelector('.bottom-bar .top-btn');
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 50) {
+            navbar.classList.add('shrink');
+            bottomBar.classList.add('shrink');
+            logoImg.classList.add('shrink');
+            topBtn.classList.add('shrink');
+        } else {
+            navbar.classList.remove('shrink');
+            bottomBar.classList.remove('shrink');
+            logoImg.classList.remove('shrink');
+            topBtn.classList.remove('shrink');
+        }
+    });
+</script>
+
 </body>
 </html>
