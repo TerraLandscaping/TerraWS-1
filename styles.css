@@ -18,22 +18,22 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0px 0px;
     background: #FF7F50;
     z-index: 10;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .navbar .logo img {
-    height: 50px;
-    border: 2px solid black;
+    height: 60px;
+    border: 3px solid black;
 }
 
 .menu-toggle {
     display: none;
     background: none;
     border: none;
-    font-size: 2em;
+    font-size: 3em;
     cursor: pointer;
     color: white;
 }
@@ -76,11 +76,11 @@ body, html {
 
 .hero-content {
     position: relative;
- /*   background: rgba(250, 235, 215, 0.9); */
+    /*   background: rgba(250, 235, 215, 0.9); */
     padding: 30px 60px;
     padding-bottom: 60px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -703,7 +703,9 @@ body, html {
 
     .menu-toggle {
         display: block;
-        margin-right: 30px;
+        margin-right: 12px;
+        margin-top: -14px;
+        margin-bottom: -2px;
     }
 
     .hero-content {
