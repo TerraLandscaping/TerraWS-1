@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
-    background-color: #FAEBD7;
+    background-color: #FF7F50;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -76,7 +76,7 @@ body, html {
 
 .hero-content {
     position: relative;
-    background: rgba(250, 235, 215, 0.9);
+ /*   background: rgba(250, 235, 215, 0.9); */
     padding: 30px 60px;
     padding-bottom: 60px;
     border-radius: 10px;
@@ -164,11 +164,11 @@ body, html {
 
 .packages-hero-content {
     position: relative;
-    background: rgba(250, 235, 215, 0.9);
+    /* background: rgba(250, 235, 215, 0.9); */
     padding: 30px 60px;
     padding-bottom: 60px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,10 +183,10 @@ body, html {
 }
 
 .list-column {
-    background: rgba(250, 235, 215, 0.9); /* Match color and transparency with annual content */
+    /* background: rgba(250, 235, 215, 0.9); */ /* Match color and transparency with annual content */
     padding: 20px 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     width: 30%;
     text-align: center;
     margin: 10px 20px; /* Increase horizontal margins for spacing */
@@ -258,15 +258,15 @@ body, html {
 }
 
 .list-column.create-your-own {
-    background: rgba(250, 235, 215, 0.9); /* Match color and transparency with annual content */
-    padding: 20px 30px;
+    /* background: rgba(250, 235, 215, 0.9); */ /* Match color and transparency with annual content */
+    padding: 0px 0px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     width: 50%; /* Increase the width */
     text-align: center;
-    margin: 10px 20px; /* Increase horizontal margins for spacing */
+    margin: 0px 0px; /* Increase horizontal margins for spacing */
     flex: 1; /* Allow flexibility */
-    min-width: 280px;
+    min-width: 310px;
     max-width: 700px; /* Ensure minimum width for columns */
 }
 
@@ -310,11 +310,11 @@ body, html {
 .create-your-own .inner-list-container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 60%;
 }
 
 .create-your-own .inner-list-column {
-    background: rgba(0, 0, 0, 0.0); 
+    background: rgba(0, 0, 0, 0.0);
     padding: 20px 15px;
     border-radius: 10px;
     width: 30%;
