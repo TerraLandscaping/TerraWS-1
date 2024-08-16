@@ -12,7 +12,7 @@ body, html {
 }
 
 .navbar {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     bottom: 604px;
     width: 100%;
@@ -813,9 +813,15 @@ body, html {
     transition: all 0.3s ease-in-out;
 }
 
+/* Shrinked Styles */
+.navbar.shrink, .bottom-bar.shrink {
+    height: 40px;
+    padding: 5px 10px;
+}
 
-
-
+.navbar .logo img.shrink, .bottom-bar .top-btn.shrink {
+    height: 30px;
+}
 
 /* Adjustments for Buttons */
 .navbar .nav-links a {
