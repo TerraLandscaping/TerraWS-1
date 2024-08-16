@@ -13,27 +13,23 @@ body, html {
 
 .navbar {
     position: fixed;
-    top: 00;
-    /* bottom: 554px; */
+    top: 0;
+    bottom: 604px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 0px 0px;
     background: #FF7F50;
     z-index: 10;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.navbar .logo {
-    height: 60px;
-    border: 3px solid black;
-}
-
 .navbar .logo img {
     height: 60px;
     border: 3px solid black;
 }
+
 .menu-toggle {
     display: none;
     background: none;
@@ -75,8 +71,8 @@ body, html {
     color: #8B4513;
     position: relative;
     width: 100%;
-    min-height: 70vh;
-    padding-top: 70px; /* Add spacing to avoid overlap with navbar */
+    min-height: 100vh;
+    padding-top: 60px; /* Add spacing to avoid overlap with navbar */
 }
 
 .hero-content {
@@ -817,15 +813,9 @@ body, html {
     transition: all 0.3s ease-in-out;
 }
 
-/* Shrinked Styles */
-.navbar.shrink, .bottom-bar.shrink {
-    height: 40px;
-    padding: 5px 10px;
-}
 
-.navbar .logo img.shrink, .bottom-bar .top-btn.shrink {
-    height: 30px;
-}
+
+
 
 /* Adjustments for Buttons */
 .navbar .nav-links a {
