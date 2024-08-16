@@ -191,7 +191,7 @@ body, html {
     text-align: center;
     margin: 10px 20px; /* Increase horizontal margins for spacing */
     flex: 1; /* Allow flexibility */
-    min-width: 500px; /* Ensure minimum width for columns */
+    min-width: 520px; /* Ensure minimum width for columns */
     position: relative; /* To position the 'X' button */
 }
 .collapse-btn {
@@ -309,8 +309,8 @@ body, html {
 
 .create-your-own .inner-list-container {
     display: flex;
-    justify-content: space-between;
-    width: 60%;
+    /* width: 60%; */
+    justify-content: center;
 }
 
 .create-your-own .inner-list-column {
@@ -793,7 +793,7 @@ body, html {
     }
 
     .list-container {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
     }
 
