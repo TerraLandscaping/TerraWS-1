@@ -25,11 +25,11 @@ body, html {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-header.navbar {}
+
 
 .navbar .logo img {
     height: 60px;
-    border: 3px solid black;
+    border: 4px solid black;
 }
 
 .menu-toggle {
@@ -48,9 +48,7 @@ header.navbar {}
     /* margin-left: 20px; */
 }
 
-nav.nav-links.active {
-    /* margin-top: auto; */
-}
+
 
 .navbar a {
     color: white;
