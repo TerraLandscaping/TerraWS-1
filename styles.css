@@ -1,6 +1,6 @@
 body, html {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Leauge Gothic';
     scroll-behavior: smooth;
     background-color: #FF7F50;
@@ -13,7 +13,8 @@ body, html {
 
 .navbar {
     position: fixed;
-    top: 0;
+    top: 0px;
+    bottom: auto;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -23,6 +24,8 @@ body, html {
     z-index: 10;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+header.navbar {}
 
 .navbar .logo img {
     height: 60px;
@@ -42,7 +45,11 @@ body, html {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+}
+
+nav.nav-links.active {
+    /* margin-top: auto; */
 }
 
 .navbar a {
@@ -52,7 +59,7 @@ body, html {
     margin: 0 15px;
     transition: color 0.3s, background 0.3s;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .navbar a:hover {
@@ -685,7 +692,7 @@ body, html {
         width: 100%;
         background: #FF7F50;
         position: absolute;
-        top: 60px;
+        top: 67px;
         left: 0;
         z-index: 9;
     }
@@ -818,6 +825,6 @@ body, html {
 
 /* Adjustments for Buttons */
 .navbar .nav-links a {
-    padding: 5px 10px;
-    font-size: 0.8em;
+    padding: 5px 0px;
+    font-size: 0.9em;
 }
