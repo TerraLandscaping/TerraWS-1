@@ -62,17 +62,15 @@
             </div>
             <div class="gallery-content">
                 <div class="gallery">
+
                     <div class="gallery-item">
-                        <img src="Photos/before1.jpg" alt="Before landscaping project 1">
+                        <img src="Photos/Phuc1.png" alt="After landscaping project 1">
                     </div>
                     <div class="gallery-item">
-                        <img src="Photos/after1.jpg" alt="After landscaping project 1">
+                        <img src="Photos/LeslieBnA1.png" alt="Before landscaping project 2">
                     </div>
                     <div class="gallery-item">
-                        <img src="Photos/before2.jpg" alt="Before landscaping project 2">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="Photos/after2.jpg" alt="After landscaping project 2">
+                        <img src="Photos/CapeBnA.png" alt="After landscaping project 2">
                     </div>
                     <!-- Add more gallery items as needed -->
                 </div>
@@ -106,6 +104,21 @@
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
+    // JavaScript to handle image click and overlay display
+    const expandableImages = document.querySelectorAll('.gallery-item img');
+    const overlay = document.getElementById('overlay');
+    const overlayImg = document.getElementById('overlay-img');
+
+    expandableImages.forEach(img => {
+        img.addEventListener('click', () => {
+            overlayImg.src = img.src;
+            overlay.style.display = 'flex';
+        });
+    });
+
+    function closeOverlay() {
+        overlay.style.display = 'none';
+    }
 
         // JavaScript to handle collapse functionality
         function toggleCollapse(id) {
