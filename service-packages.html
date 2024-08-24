@@ -104,17 +104,7 @@
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
-    // JavaScript to handle image click and overlay display
-    const expandableImages = document.querySelectorAll('.gallery-item img');
-    const overlay = document.getElementById('overlay');
-    const overlayImg = document.getElementById('overlay-img');
 
-    expandableImages.forEach(img => {
-        img.addEventListener('click', () => {
-            overlayImg.src = img.src;
-            overlay.style.display = 'flex';
-        });
-    });
 
     function closeOverlay() {
         overlay.style.display = 'none';
