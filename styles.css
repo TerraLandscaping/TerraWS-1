@@ -276,10 +276,10 @@ body, html {
 }
 
 .list-column.create-your-own {
-    /* background: rgba(250, 235, 215, 0.9); */ /* Match color and transparency with annual content */
+    
     padding: 0px 0px;
     border-radius: 10px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+   
     width: 50%; /* Increase the width */
     text-align: center;
     margin: 0px 0px; /* Increase horizontal margins for spacing */
@@ -327,7 +327,7 @@ body, html {
 
 .create-your-own .inner-list-container {
     display: flex;
-    /* width: 60%; */
+
     justify-content: center;
 }
 
@@ -765,13 +765,16 @@ body, html {
 
     .navbar .nav-links.active {
         display: flex;
+        align-items: center;
     }
 
     .menu-toggle {
-        display: block;
-        margin-right: 12px;
-        margin-top: -14px;
-        margin-bottom: -2px;
+        display: none;
+        background: none;
+        border: none;
+        font-size: 3em;
+        cursor: pointer;
+        color: white;
     }
 
     .hero-content {
