@@ -769,13 +769,15 @@ body, html {
     }
 
     .menu-toggle {
-        display: none;
+        display: flex;
         background: none;
-        border: none;
+        margin-right: 4px;
+        margin-top: -10px;
         font-size: 3em;
         cursor: pointer;
         color: white;
     }
+
 
     .hero-content {
         padding: 20px;
